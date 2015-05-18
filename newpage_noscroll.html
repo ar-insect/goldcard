@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>智能燃气管理系统</title>
+    <link href="style/header.css" rel="stylesheet" type="text/css" />
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <link href="style/copyright.css" rel="stylesheet" type="text/css" />
+    <link href="style/leftmenu.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style/jquery-ui.min.css" />
+    <link rel="stylesheet" href="style/function.css" />
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/pageH.js"></script>
+    <!--<script type="text/javascript" src="js/functions.js"></script>-->
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+</head>
+
+<body>
+<div id="header">
+    <div id="header_content">
+        <div class="header_logotitle"><img src="images/header_logo.png" width="180" height="40"/><img
+                src="images/header_title.png" width="200" height="40"/></div>
+        <div class="topnav">欢迎管理员登录<br/>
+            时间插件
+        </div>
+        <nav id="menu">
+            <ul class="sf-menu">
+                <li><a href="#"><img src="images/icon_09.png"/>首页</a></li>
+                <li class="current"><a HREF="#"><img src="images/menu_icon_01_current.png"/>系统资料</a></li>
+                <li><a HREF="#"><img src="images/menu_icon_02.png"/>档案资料</a></li>
+                <li><a HREF="#"><img src="images/menu_icon_03.png"/>信用凭证</a></li>
+                <li><a HREF="#"><img src="images/menu_icon_04.png"/>数据运营</a></li>
+                <li><a HREF="#"><img src="images/menu_icon_05.png"/>报表中心</a></li>
+            </ul>
+        </nav>
+        <p><a href="#">修改密码</a> <a href="login.html">退出系统</a></p>
+    </div>
+</div>
+<div class="container">
+    <div class="side_box">
+        <div id="navigation"> <!-- Navigation begins here -->
+            <div class="sidenav"><!-- Sidenav -->
+                <div class="navhead"><span>用气报表</span></div>
+                <div class="subnav">
+                    <ul class="submenu">
+                        <li><a href="#" title="">日用气量</a></li>
+                        <li><a href="#" title="">月用气量</a></li>
+                        <li class="current"><a href="#" title="">年用气量</a></li>
+                    </ul>
+                </div>
+                <div class="navhead"><span>收费报表</span></div>
+                <div class="subnav">
+                    <ul class="submenu">
+                        <li><a href="#" title="">月收费</a></li>
+                        <li><a href="#" title="">年收费</a></li>
+                        <li><a href="#" title="">收费明细</a></li>
+                        <li><a href="#" title="">账户明细报表</a></li>
+                    </ul>
+                </div>
+                <div class="navhead"><span>统计图</span></div>
+                <div class="subnav">
+                    <ul class="submenu">
+                        <li><a href="#" title="">日用气量</a></li>
+                        <li><a href="#" title="">月用气量</a></li>
+                        <li><a href="#" title="">年用气量</a></li>
+                        <li><a href="#" title="">不同时间用量对比</a></li>
+                        <li><a href="#" title="">同一时间段用量趋势图</a></li>
+                    </ul>
+                </div>
+                <div class="navhead"><span>通讯管理</span></div>
+                <div class="subnav">
+                    <ul class="submenu">
+                        <li><a href="#" title="">Submenu Item 1</a></li>
+                        <li><a href="#" title="">Submenu Item 2</a></li>
+                        <li><a href="#" title="">Submenu Item 3</a></li>
+                    </ul>
+                </div>
+                <div class="navhead"><span>异常报表</span></div>
+                <div class="subnav">
+                    <ul class="submenu">
+                        <li><a href="#" title="">不用气</a></li>
+                        <li><a href="#" title="">不上传</a></li>
+                        <li><a href="#" title="">欠费用户</a></li>
+                        <li><a href="#" title="">报表信息</a></li>
+                        <li><a href="#" title="">阀门信息</a></li>
+                        <li><a href="#" title="">余量不足</a></li>
+                        <li><a href="#" title="">电量不足</a></li>
+                        <li><a href="#" title="">电磁干扰</a></li>
+                        <li><a href="#" title="">到期表具</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- END Navigation -->
+    </div>
+
+    <div class="main_box">
+        <div class="m_box">
+            <div class="search">
+                <form class="ui-form">
+                    <h3>用气量报表</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="control-group">
+                            <label class="control-label">用户名称：</label>
+                            <div class="controls"><input type="text"/></div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">用户类型：</label>
+                            <div class="controls">
+                                <select name="" id="J_userType">
+                                    <option selected="selected" value="">请选择</option>
+                                    <option value="TYPE1">类型1</option>
+                                    <option value="TYPE2">类型2</option>
+                                    <option value="TYPE3">类型3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">小区：</label>
+                            <div class="controls"><input type="text"/></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="control-group">
+                            <label class="control-label">表具类型：</label>
+                            <div class="controls">
+                                <select name="" id="J_instrumentType">
+                                    <option selected="selected" value="">请选择</option>
+                                    <option value="TYPE1">类型1类型1类型1类型1</option>
+                                    <option value="TYPE2">类型2</option>
+                                    <option value="TYPE3">类型3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">表号：</label>
+                            <div class="controls"><input type="text"/></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="control-group">
+                            <label class="control-label">时间区间：</label>
+                            <div class="controls"><input type="text" id="J_startDate"/></div>
+                            <label class="control-label" style="width:43px;">至：</label>
+                            <div class="controls"><input type="text" id="J_endDate"/></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="control-group">
+                            <label class="control-label">用气价格：</label>
+                            <div class="controls"><input type="text"/></div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">用气量区间：</label>
+                            <div class="controls"><input type="text"/></div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">所属机构：</label>
+                            <div class="controls"><input type="text"/></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="control-group">
+                            <label class="control-label">档案编码：</label>
+                            <div class="controls"><input type="text"/></div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">档案标识：</label>
+                            <div class="controls"><input type="text"/></div>
+                        </div>
+                    </div>
+                    <div class="row actions-bar">
+                        <div class="form-actions">
+                            <div class="fleft">
+                                <a href="#" class="btn btn-green">导出</a>
+                                <a href="#" class="btn" style="margin-left: 20px">打印</a>
+                            </div>
+                            <div class="fleft" style="margin-left: 200px">
+                                <input type="submit" value="查询" class="btn btn-blue" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="content">
+                <div class="con_head" style="padding:10px;">
+                    <div style="float: right;line-height: 16px;height: 22px;">扣费总金额：M元，充值总金额：N元</div>
+                </div>
+                <table class="stylized full" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>用户名称</th>
+                            <th>业务类型</th>
+                            <th>金额</th>
+                            <th>气量</th>
+                            <th>单价</th>
+                            <th>当前账户余额</th>
+                            <th>操作时间</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>张三</td>
+                            <td>Data 1</td>
+                            <td>Data 2</td>
+                            <td>Data 3</td>
+                            <td>Data 4</td>
+                            <td>Data 5</td>
+                            <td>Data 6</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>李四</td>
+                            <td>Highlighted 1</td>
+                            <td>Highlighted 2</td>
+                            <td>Highlighted 3</td>
+                            <td>Highlighted 4</td>
+                            <td>Highlighted 5</td>
+                            <td>Highlighted 6</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td colspan="8">Table footer/放翻页</td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<DIV id="copyright">Copyright © 2014, 金卡股份版权所有</DIV>
+
+<script type="text/javascript">
+    $(function() {
+        $("#J_userType, #J_instrumentType").selectmenu();
+        // 开始时间-结束时间
+        var dates = $("#J_startDate, #J_endDate");
+        dates.datepicker({
+            onSelect: function(selectedDate) {
+                var option = this.id === "J_startDate" ? "minDate" : "maxDate";
+                dates.not(this).datepicker("option", option, selectedDate);
+            }
+        });
+
+    });
+</script>
+
+</body>
+</html>

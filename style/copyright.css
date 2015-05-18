@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+/*=====================copyright=============================*/
+#copyright {
+    height: 50px;
+    background-color: #f5f5f5;
+    border-top-color: #cccccc;
+    border-top-width: 1px;
+    border-top-style: solid;
+    text-align: center;
+    color: #808080;
+    line-height: 50px;
+}
