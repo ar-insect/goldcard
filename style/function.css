@@ -70,3 +70,13 @@
     background-color: #e8e9ef;
     border-top: 1px solid #c3c3d6;
 }
+
+.toolbar {
+    height: 30px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.toolbar li {
+    display: inline-block;
+}
