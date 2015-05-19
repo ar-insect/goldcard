@@ -1,4 +1,8 @@
-.search input {
+.ui-form {
+    margin-bottom: 20px;
+}
+
+.ui-form input {
     position: relative;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -60,15 +64,7 @@
 }
 
 .ui-form .form-actions {
-    margin-left: 130px;
-}
-
-.ui-form .actions-bar {
-    padding: 19px 20px 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: #e8e9ef;
-    border-top: 1px solid #c3c3d6;
+    margin-left: 60px;
 }
 
 .toolbar {

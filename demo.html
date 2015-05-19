@@ -102,9 +102,26 @@
                     <hr>
                     <div class="row">
                         <div class="control-group">
-                            <label class="control-label">用户名称：</label>
+                            <label class="control-label">查询条件：</label>
+                            <div class="controls">
+                                <select name="" id="J_userType">
+                                    <option selected="selected" value="">用户名称</option>
+                                    <option value="">档案编号</option>
+                                    <option value="">手机号码</option>
+                                    <option value="">档案标识</option>
+                                    <option value="">表号</option>
+                                    <option value="">卡号</option>
+                                    <option value="">地址</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label"></label>
                             <div class="controls"><input type="text"/></div>
                         </div>
+                    </div>
+
+                    <div class="row">
                         <div class="control-group">
                             <label class="control-label">用户类型：</label>
                             <div class="controls">
@@ -117,12 +134,6 @@
                             </div>
                         </div>
                         <div class="control-group">
-                            <label class="control-label">小区：</label>
-                            <div class="controls"><input type="text"/></div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="control-group">
                             <label class="control-label">表具类型：</label>
                             <div class="controls">
                                 <select name="" id="J_instrumentType">
@@ -133,11 +144,8 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="control-group">
-                            <label class="control-label">表号：</label>
-                            <div class="controls"><input type="text"/></div>
-                        </div>
                     </div>
+
                     <div class="row">
                         <div class="control-group">
                             <label class="control-label">时间区间：</label>
@@ -145,42 +153,47 @@
                             <label class="control-label" style="width:43px;">至：</label>
                             <div class="controls"><input type="text" id="J_endDate"/></div>
                         </div>
+                        <div class="control-group">
+                            <label class="control-label">用气量区间：</label>
+                            <div class="controls"><input type="text" style="width:38px;" id="J_startAmount"/></div>
+                            <label class="control-label" style="width:43px;">至：</label>
+                            <div class="controls"><input type="text" style="width:38px;" id="J_endAmount" /></div>
+                        </div>
                     </div>
 
                     <div class="row">
                         <div class="control-group">
                             <label class="control-label">用气价格：</label>
-                            <div class="controls"><input type="text"/></div>
+                            <div class="controls">
+                                <select name="" id="J_price">
+                                    <option selected="selected" value="">请选择</option>
+                                    <option value="TYPE1">类型1</option>
+                                    <option value="TYPE2">类型2</option>
+                                    <option value="TYPE3">类型3</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="control-group">
-                            <label class="control-label">用气量区间：</label>
-                            <div class="controls"><input type="text"/></div>
+                            <label class="control-label"></label>
+                            <div class="controls"><input type="text" style="width: 38px;"/></div>
                         </div>
-                        <div class="control-group">
+                        <div class="control-group" style="margin-left: -132px">
                             <label class="control-label">所属机构：</label>
                             <div class="controls"><input type="text"/></div>
                         </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="control-group">
-                            <label class="control-label">档案编码：</label>
-                            <div class="controls"><input type="text"/></div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label">档案标识：</label>
-                            <div class="controls"><input type="text"/></div>
-                        </div>
-                    </div>
-                    <div class="row actions-bar">
-                        <div class="form-actions">
-                            <div class="fleft">
-                                <a href="#" class="btn btn-green">导出</a>
-                                <a href="#" class="btn" style="margin-left: 20px">打印</a>
-                            </div>
-                            <div class="fleft" style="margin-left: 200px">
-                                <input type="submit" value="查询" class="btn btn-blue" />
-                            </div>
+                        <div class="control-group form-actions">
+                            <span class="button button-green button-export">
+                                <button class="button-text">导出</button>
+                                <span class="button-icon"></span>
+                            </span>
+                            <span class="button button-white button-printer">
+                                <button class="button-text">打印</button>
+                                <span class="button-icon"></span>
+                            </span>
+                            <span class="button button-blue button-search">
+                                <input class="button-text" type="submit" value="查询" />
+                                <span class="button-icon"></span>
+                            </span>
                         </div>
                     </div>
                 </form>
@@ -241,7 +254,7 @@
 
 <script type="text/javascript">
     $(function() {
-        $("#J_userType, #J_instrumentType").selectmenu();
+        $("#J_userType, #J_instrumentType, #J_price").selectmenu();
         // 开始时间-结束时间
         var dates = $("#J_startDate, #J_endDate");
         dates.datepicker({
