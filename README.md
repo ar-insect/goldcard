@@ -3,5 +3,5 @@
 
 demo °¸ÀýÑÝÊ¾Ò³Ãæ
 
-![demo snapshoot](images/snapshoot.jpg)
+![demo snapshoot](images/snapshoot.png)
 
