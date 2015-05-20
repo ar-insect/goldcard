@@ -1,4 +1,56 @@
-<!-- the sidebar -->
-<div id="sidebar">
-	<p>here is the sidebar</p>
+<div class="side_box">
+    <div id="navigation"> <!-- Navigation begins here -->
+        <div class="sidenav"><!-- Sidenav -->
+            <div class="navhead"><span>用气报表</span></div>
+            <div class="subnav">
+                <ul class="submenu">
+                    <li><a href="#" title="">日用气量</a></li>
+                    <li><a href="#" title="">月用气量</a></li>
+                    <li class="current"><a href="#" title="">年用气量</a></li>
+                </ul>
+            </div>
+            <div class="navhead"><span>收费报表</span></div>
+            <div class="subnav">
+                <ul class="submenu">
+                    <li><a href="#" title="">月收费</a></li>
+                    <li><a href="#" title="">年收费</a></li>
+                    <li><a href="#" title="">收费明细</a></li>
+                    <li><a href="#" title="">账户明细报表</a></li>
+                </ul>
+            </div>
+            <div class="navhead"><span>统计图</span></div>
+            <div class="subnav">
+                <ul class="submenu">
+                    <li><a href="#" title="">日用气量</a></li>
+                    <li><a href="#" title="">月用气量</a></li>
+                    <li><a href="#" title="">年用气量</a></li>
+                    <li><a href="#" title="">不同时间用量对比</a></li>
+                    <li><a href="#" title="">同一时间段用量趋势图</a></li>
+                </ul>
+            </div>
+            <div class="navhead"><span>通讯管理</span></div>
+            <div class="subnav">
+                <ul class="submenu">
+                    <li><a href="#" title="">Submenu Item 1</a></li>
+                    <li><a href="#" title="">Submenu Item 2</a></li>
+                    <li><a href="#" title="">Submenu Item 3</a></li>
+                </ul>
+            </div>
+            <div class="navhead"><span>异常报表</span></div>
+            <div class="subnav">
+                <ul class="submenu">
+                    <li><a href="#" title="">不用气</a></li>
+                    <li><a href="#" title="">不上传</a></li>
+                    <li><a href="#" title="">欠费用户</a></li>
+                    <li><a href="#" title="">报表信息</a></li>
+                    <li><a href="#" title="">阀门信息</a></li>
+                    <li><a href="#" title="">余量不足</a></li>
+                    <li><a href="#" title="">电量不足</a></li>
+                    <li><a href="#" title="">电磁干扰</a></li>
+                    <li><a href="#" title="">到期表具</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- END Navigation -->
 </div>

@@ -8,7 +8,7 @@ html, body {
 }
 
 body {
-    background: url("../images/page_bg.png") 0px 0px #fff !important;
+    background: url("../../../images/page_bg.png") 0px 0px #fff !important;
     font-family: "Î¢ÈíÑÅºÚ", Arial;
     font-size: 12px;
     line-height: 1em;
@@ -62,7 +62,7 @@ a:hover {
 
 /*=====================header=============================*/
 #header {
-    background: url(../images/header_bg.png) left top no-repeat #3775b3;
+    background: url(../../../images/header_bg.png) left top no-repeat #3775b3;
     height: 110px;
 }
 
@@ -202,18 +202,18 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
 }
 
 .sf-menu li, .sf-menu li a {
-    background: url(../images/btn_bg_03.png) no-repeat;
+    background: url(../../../images/btn_bg_03.png) no-repeat;
     margin-right: 2px;
     color: #b8e0fa
 }
 
 .sf-menu li:hover, .sf-menu li.sfHover, .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
-    background: url("../images/menu_over_bg.png") no-repeat;
+    background: url(../../../images/menu_over_bg.png) no-repeat;
     outline: 0;
 }
 
 .sf-menu li.current, .sf-menu li.current a {
-    background: url(../images/btn_bg_06.png) no-repeat;
+    background: url(../../../images/btn_bg_06.png) no-repeat;
     color: #0a55a0;
 }
 

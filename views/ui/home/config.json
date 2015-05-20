@@ -1,9 +1,7 @@
 {
     "default": {
-        "css": ["bootstrap/3.3.2/bootstrap-debug.css", "bootstrap/3.3.2/bootstrap-theme-debug.css"],
-        "js": ["$.js", "bootstrap/3.3.2/bootstrap-debug.js"],
-        "head": "theme/home",
-        "foot": "theme/home",
+        "css": [],
+        "js": [],
         "vars": {
             "title": "首页"
         }
@@ -19,6 +17,7 @@
             "css": [],
             "js": [],
             "vars": {
+
             }
         }
     }

@@ -24,7 +24,7 @@ ul li {
     width: 100%;
     text-align: center;
     height: 37px;
-    background: url(../images/menu_bg_15.png) 0 0 repeat-x;
+    background: url(../../../images/menu_bg_15.png) 0 0 repeat-x;
     margin-bottom: 5px;
     line-height: 35px;
     font-size: 14px;
@@ -37,7 +37,7 @@ ul li {
 }
 
 .selected, .navhead_blank:hover {
-    background: url(../images/menu_bg_19.png) 0 0 repeat-x;
+    background: url(../../../images/menu_bg_19.png) 0 0 repeat-x;
     font-weight: bold;
     line-height: 37px;
     color: #fff;

@@ -1,12 +1,9 @@
 #*
 @description: 默认头部
 *#
-<!doctype html>
-<!--[if IE 9]><html class="lt-ie10" lang="zh"><![endif]-->
-<html class="no-js" lang="zh">
-        <meta charset="$ui.charset" />
-        <!-- If you delete this meta tag World War Z will become a reality -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <title>$!ui.title</title>
     	## 配置css
         #SLITERAL($!ui.css)
@@ -26,14 +23,33 @@
                 charset : 'utf-8'
             });
         </script>
-        <script src="/assets/$.js"></script>
+        <script src="/assets/jquery-1.11.1.js"></script>
     </head>
     <body>
- <!-- Header and Nav -->
-       <div class="row">
-         <div class="large-3 columns">
-           <h1>spider</h1>
-         </div>
-         #cmsparse("component/nav.vm")
-       </div>
- <!-- End Header and Nav -->
+
+    <div id="header">
+        <div id="header_content">
+            <div class="header_logotitle"><img src="images/header_logo.png" width="180" height="40"/><img
+                    src="images/header_title.png" width="200" height="40"/></div>
+            <div class="topnav">欢迎管理员登录<br/>
+                时间插件
+            </div>
+            <nav id="menu">
+                <ul class="sf-menu">
+                    <li><a href="#"><img src="images/icon_09.png"/>首页</a></li>
+                    <li class="current"><a HREF="#"><img src="images/menu_icon_01_current.png"/>系统资料</a></li>
+                    <li><a HREF="#"><img src="images/menu_icon_02.png"/>档案资料</a></li>
+                    <li><a HREF="#"><img src="images/menu_icon_03.png"/>信用凭证</a></li>
+                    <li><a HREF="#"><img src="images/menu_icon_04.png"/>数据运营</a></li>
+                    <li><a HREF="#"><img src="images/menu_icon_05.png"/>报表中心</a></li>
+                </ul>
+            </nav>
+            <p><a href="#">修改密码</a> <a href="login.html">退出系统</a></p>
+        </div>
+    </div>
+
+    <div class="container">
+        ##侧边栏
+        #cmsparse("component/sidebar.vm")
+        <div class="main_box">
+            <div class="m_box">
