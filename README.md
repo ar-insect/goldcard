@@ -1,4 +1,4 @@
 ## demo
 
-Ç°¶ËÊ¹ÓÃ Jquery EasyUI 1.4.2
+å‰ç«¯ä½¿ç”¨ Jquery EasyUI 1.4.2
 
