@@ -52,130 +52,131 @@ exports.combotree = function(req, res) {
 };
 
 exports.datagrid = function(req, res) {
-    var page = res.page || 1;
-    var rows = res.rows || 10;
+    var page = req.body.page || 1;
+    var rows = req.body.rows || 10;
     var offset = (page - 1) * rows;
+    console.log('currentpage:', req.body.page);
+        res.json([
+            {
+                "itemid": "11222",
+                "productid": "dsdsfdfs",
+                "listprice": "23223",
+                "unitcost": "sdfsd",
+                "attr1": "xxvzvxczcx",
+                "status": "ddf",
+                "status121": "fdfsdf",
+                "status12221": "fsdf"
+            },
+            {
+                "itemid": "11222",
+                "productid": "dsdsfdfs",
+                "listprice": "23223",
+                "unitcost": "sdfsd",
+                "attr1": "xxvzvxczcx",
+                "status": "ddf",
+                "status121": "fdfsdf",
+                "status12221": "fsdf"
+            },
+            {
+                "itemid": "11222",
+                "productid": "dsdsfdfs",
+                "listprice": "23223",
+                "unitcost": "sdfsd",
+                "attr1": "xxvzvxczcx",
+                "status": "ddf",
+                "status121": "fdfsdf",
+                "status12221": "fsdf"
+            },
+            {
+                "itemid": "11222",
+                "productid": "dsdsfdfs",
+                "listprice": "23223",
+                "unitcost": "sdfsd",
+                "attr1": "xxvzvxczcx",
+                "status": "ddf",
+                "status121": "fdfsdf",
+                "status12221": "fsdf"
+            },
+            {
+                "itemid": "11222",
+                "productid": "dsdsfdfs",
+                "listprice": "23223",
+                "unitcost": "sdfsd",
+                "attr1": "xxvzvxczcx",
+                "status": "ddf",
+                "status121": "fdfsdf",
+                "status12221": "fsdf"
+            },
+            {
+                "itemid": "11222",
+                "productid": "dsdsfdfs",
+                "listprice": "23223",
+                "unitcost": "sdfsd",
+                "attr1": "xxvzvxczcx",
+                "status": "ddf",
+                "status121": "fdfsdf",
+                "status12221": "fsdf"
+            },
+            {
+                "itemid": "11222",
+                "productid": "dsdsfdfs",
+                "listprice": "23223",
+                "unitcost": "sdfsd",
+                "attr1": "xxvzvxczcx",
+                "status": "ddf",
+                "status121": "fdfsdf",
+                "status12221": "fsdf"
+            },
+            {
+                "itemid": "11222",
+                "productid": "dsdsfdfs",
+                "listprice": "23223",
+                "unitcost": "sdfsd",
+                "attr1": "xxvzvxczcx",
+                "status": "ddf",
+                "status121": "fdfsdf",
+                "status12221": "fsdf"
+            },
+            {
+                "itemid": "11222",
+                "productid": "dsdsfdfs",
+                "listprice": "23223",
+                "unitcost": "sdfsd",
+                "attr1": "xxvzvxczcx",
+                "status": "ddf",
+                "status121": "fdfsdf",
+                "status12221": "fsdf"
+            },
+            {
+                "itemid": "11222",
+                "productid": "dsdsfdfs",
+                "listprice": "23223",
+                "unitcost": "sdfsd",
+                "attr1": "xxvzvxczcx",
+                "status": "ddf",
+                "status121": "fdfsdf",
+                "status12221": "fsdf"
+            },{
+                "itemid": "3434323233232323232",
+                "productid": "jhjklklklklkl",
+                "listprice": "986545",
+                "unitcost": "axcxccxxc",
+                "attr1": "xxvzvxczcx",
+                "status": "sdsaaasfgg",
+                "status121": "sdsddsfgfg",
+                "status12221": "bvjhjhhg"
+            },
+            {
+                "itemid": "14545r445451222",
+                "productid": "aaassassasasa",
+                "listprice": "2332456565",
+                "unitcost": "sdfsd",
+                "attr1": "bvnbnbnb",
+                "status": "wewe23sdweewwe",
+                "status121": "sccxfbhghg",
+                "status12221": "zxzxassaas"
+            }
+        ]);
 
-    res.json([
-        {
-         "itemid": "11222",
-            "productid": "dsdsfdfs",
-            "listprice": "23223",
-            "unitcost": "sdfsd",
-            "attr1": "xxvzvxczcx",
-            "status": "ddf",
-            "status121": "fdfsdf",
-            "status12221": "fsdf"
-        },
-        {
-            "itemid": "11222",
-            "productid": "dsdsfdfs",
-            "listprice": "23223",
-            "unitcost": "sdfsd",
-            "attr1": "xxvzvxczcx",
-            "status": "ddf",
-            "status121": "fdfsdf",
-            "status12221": "fsdf"
-        },
-        {
-            "itemid": "11222",
-            "productid": "dsdsfdfs",
-            "listprice": "23223",
-            "unitcost": "sdfsd",
-            "attr1": "xxvzvxczcx",
-            "status": "ddf",
-            "status121": "fdfsdf",
-            "status12221": "fsdf"
-        },
-        {
-            "itemid": "11222",
-            "productid": "dsdsfdfs",
-            "listprice": "23223",
-            "unitcost": "sdfsd",
-            "attr1": "xxvzvxczcx",
-            "status": "ddf",
-            "status121": "fdfsdf",
-            "status12221": "fsdf"
-        },
-        {
-            "itemid": "11222",
-            "productid": "dsdsfdfs",
-            "listprice": "23223",
-            "unitcost": "sdfsd",
-            "attr1": "xxvzvxczcx",
-            "status": "ddf",
-            "status121": "fdfsdf",
-            "status12221": "fsdf"
-        },
-        {
-            "itemid": "11222",
-            "productid": "dsdsfdfs",
-            "listprice": "23223",
-            "unitcost": "sdfsd",
-            "attr1": "xxvzvxczcx",
-            "status": "ddf",
-            "status121": "fdfsdf",
-            "status12221": "fsdf"
-        },
-        {
-            "itemid": "11222",
-            "productid": "dsdsfdfs",
-            "listprice": "23223",
-            "unitcost": "sdfsd",
-            "attr1": "xxvzvxczcx",
-            "status": "ddf",
-            "status121": "fdfsdf",
-            "status12221": "fsdf"
-        },
-        {
-            "itemid": "11222",
-            "productid": "dsdsfdfs",
-            "listprice": "23223",
-            "unitcost": "sdfsd",
-            "attr1": "xxvzvxczcx",
-            "status": "ddf",
-            "status121": "fdfsdf",
-            "status12221": "fsdf"
-        },
-        {
-            "itemid": "11222",
-            "productid": "dsdsfdfs",
-            "listprice": "23223",
-            "unitcost": "sdfsd",
-            "attr1": "xxvzvxczcx",
-            "status": "ddf",
-            "status121": "fdfsdf",
-            "status12221": "fsdf"
-        },
-        {
-            "itemid": "11222",
-            "productid": "dsdsfdfs",
-            "listprice": "23223",
-            "unitcost": "sdfsd",
-            "attr1": "xxvzvxczcx",
-            "status": "ddf",
-            "status121": "fdfsdf",
-            "status12221": "fsdf"
-        },
-        {
-            "itemid": "3434323233232323232",
-            "productid": "jhjklklklklkl",
-            "listprice": "986545",
-            "unitcost": "axcxccxxc",
-            "attr1": "xxvzvxczcx",
-            "status": "sdsaaasfgg",
-            "status121": "sdsddsfgfg",
-            "status12221": "bvjhjhhg"
-        },
-        {
-            "itemid": "14545r445451222",
-            "productid": "aaassassasasa",
-            "listprice": "2332456565",
-            "unitcost": "sdfsd",
-            "attr1": "bvnbnbnb",
-            "status": "wewe23sdweewwe",
-            "status121": "sccxfbhghg",
-            "status12221": "zxzxassaas"
-        },
-    ]);
+
 };

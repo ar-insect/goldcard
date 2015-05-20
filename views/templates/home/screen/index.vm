@@ -109,14 +109,14 @@
            toolbar="#tb">
         <thead>
             <tr>
-                <th field="itemid" width="80">序号</th>
-                <th field="productid" width="200">用户名称</th>
-                <th field="listprice" width="100" align="right">业务类型</th>
-                <th field="unitcost" width="80" align="right">金额</th>
-                <th field="attr1" width="100">气量</th>
-                <th field="status" width="60" align="center">单价</th>
-                <th field="status121" width="120" align="center">当前账户余额</th>
-                <th field="status12221" width="100" align="center">操作时间</th>
+                <th field="itemid" width="200">序号</th>
+                <th field="productid" width="220">用户名称</th>
+                <th field="listprice" width="200" align="right">业务类型</th>
+                <th field="unitcost" width="200" align="right">金额</th>
+                <th field="attr1" width="200">气量</th>
+                <th field="status" width="200" align="center">单价</th>
+                <th field="status121" width="200" align="center">当前账户余额</th>
+                <th field="status12221" width="200" align="center">操作时间</th>
             </tr>
         </thead>
     </table>
