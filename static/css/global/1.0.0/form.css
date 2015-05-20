@@ -1,0 +1,70 @@
+/* form.css
+---------------------------------------------------------------------*/
+.ui-form {
+    margin-bottom: 20px;
+}
+
+.ui-form input {
+    position: relative;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    behavior: url(ie-css3.htc);
+}
+
+.ui-form input {
+    width: auto;
+}
+
+.ui-form input[type=text],
+.ui-form input[type="password"],
+.ui-form textarea {
+    width: 150px;
+}
+
+.ui-form .radio {
+    font-weight: normal;
+}
+
+.ui-form .radio input {
+    width: auto;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: -4px;
+}
+
+.ui-form .row {
+    overflow: hidden;
+    margin-left: -10px;
+}
+
+.ui-form .control-group {
+    float: left;
+}
+
+.ui-form .control-label {
+    float: left;
+    text-align: right;
+    line-height: 30px;
+    display: inline-block;
+    font-weight: normal;
+    width: 120px;
+}
+
+.ui-form .control-label s {
+    color: red;
+    padding-right: 5px;
+    text-decoration: none;
+}
+
+.ui-form .controls {
+    margin-left: 10px;
+    float: left;
+    display: inline;
+    height: 48px;
+    line-height: 30px;
+}
+
+.ui-form .form-actions {
+    margin-left: 60px;
+}

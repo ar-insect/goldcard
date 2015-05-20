@@ -1,0 +1,21 @@
+/*
+function css
+*/
+
+.toolbar {
+    height: 30px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.toolbar li {
+    display: inline-block;
+}
+
+.fn-mr10 {
+    margin-right: 10px;
+}
+
+.fn-mr20 {
+    margin-right: 20px;
+}

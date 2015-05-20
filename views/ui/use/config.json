@@ -1,0 +1,33 @@
+{
+    "default": {
+        "css": ["foundation/5.5.0/foundation-debug.css"],
+        "js": ["foundation/5.5.0/foundation-debug.js"],
+        "vars": {
+            "title": "下载及使用"
+        }
+    },
+    "page": {
+        "index": {
+            "css": ["highlight/8.3/styles/github.css"],
+            "js": ["highlight/8.3/highlight.pack.js"],
+            "vars": {
+
+            }
+        },
+        "demo/index": {
+            "css": [],
+            "js": [],
+            "vars": {
+                "layout": "null",
+                "title": "案例演示",
+                "isTrue": true
+            }
+        },
+        "demo/column": {
+            "vars": {
+                "layout": "blank",
+                "title": "xxx"
+            }
+        }
+    }
+}

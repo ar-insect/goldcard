@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+        <meta charset="$ui.charset" />
+        <!-- If you delete this meta tag World War Z will become a reality -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>$!ui.title</title>
+    	## 配置css
+        <link rel="stylesheet" type="text/css" href="/assets/gmu/2.1.0/gmu.css" />
+
+
+        #SLITERAL($!ui.__style)
+
+        <script type="text/javascript" src="/assets/gmu/2.1.0/gmu.js"></script>
+
+    </head>
+    <body>
+
+    #parse($!ui.__screen)
+
+    ## 配置js
+    #SLITERAL($!ui.__script)
+</body>
+</html>

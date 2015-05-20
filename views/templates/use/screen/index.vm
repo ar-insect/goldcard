@@ -1,0 +1,56 @@
+
+<div class="row">
+    <div class="large-12 columns">
+        <ol class="step-by-step">
+            <li><p>将项目克隆到本地：git clone git@github.com:automatically/spider.git</p></li>
+            <li><p>切换到项目根目录下面，比如：cd ~/spider依次执行</p>
+            <p>npm install 安装项目所需要的插件</p>
+            <p>grunt 部署本地静态资源，成功后在项目根目录下会产出assets目录（只在初次执行）</p>
+            <p>node app.js 访问：http://localhost:3000 就可以看到本地环境的页面效果</p>
+            </li>
+        </ol>
+    </div>
+</div>
+
+<div class="row">
+    <div class="large-12 columns">
+        <h3>如何在本地快速新建一个页面？</h3>
+
+        <p>以项目中的singleForm案例来简述构建过程：</p>
+
+        在views/templates/mytest 下面建立一个模板文件singleForm.vm这个模板是页面的主体部分（其中不包含页面的头尾）
+
+        在controllers/mytest下面建立一个nodejs文件singleForm.js用来mock业务数据和渲染模板
+
+        在static/js/mytest/1.0.0下面建立一个singleForm.js就是页面对应的业务脚本
+
+        在gruntfile.js里面新增样式脚本部署的相关配置（依赖配置在package.json的alias），完成后在项目根目录下执行grunt native打包部署静态资源
+
+        在views/ui/mytest/config.json配置打包部署好的脚本
+
+        在routes.js加入页面访问规则
+
+        最后执行node app.js访问http://localhost:3000/mytest/singleForm预览页面效果
+
+        Tips
+
+        每次pull下来先执行npm install 和 grunt native
+
+        每次对项目中的js&css 改动都需要手动执行grunt native或者在命令行执行grunt watch则会在后台监控，一旦代码改动就会自动部署，推荐这种方式
+
+        修改controllers下面的js文件需要重启node服务node app.js
+
+        <a href="/use/demo">点击查看案例演示</a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="large-12 columns">
+        <pre><code class="javascript hljs">
+        var Hello = function() {
+            var s = '';
+        };
+        </code></pre>
+    </div>
+</div>
+

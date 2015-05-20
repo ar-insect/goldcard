@@ -1,0 +1,52 @@
+
+.fn-mt20 {
+    margin-top: 20px;
+}
+
+.fn-mb20 {
+    margin-bottom: 20px;
+}
+
+.fn-mt10 {
+    margin-top: 10px;
+}
+
+.fn-mb10 {
+    margin-bottom: 10px;
+}
+
+.fn-mr20 {
+    margin-right: 20px;
+}
+
+.fn-mr0 {
+    margin-right: 0;
+}
+
+.fn-left {
+    float: left;
+}
+
+.fn-clear:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0
+}
+
+.fn-clear {
+    zoom: 1
+}
+
+.cert-wrap {
+    width: 932px;
+
+}
+
+.cert-review {
+    width: 218px;
+    height: auto;
+    overflow: hidden;
+}
