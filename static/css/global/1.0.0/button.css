@@ -141,7 +141,7 @@
 }
 
 .button-search .button-icon {
-    background: url("../images/search.png") no-repeat;
+    background: url("../../../images/search.png") no-repeat;
 }
 
 .button-printer input.button-text,
@@ -150,5 +150,5 @@
 }
 
 .button-printer .button-icon {
-    background: url("../images/printer.png") no-repeat;
+    background: url("../../../images/printer.png") no-repeat;
 }

@@ -88,7 +88,7 @@
             <div class="control-group">
                 <label class="control-label">所属机构：</label>
                 <div class="controls">
-                    <input class="easyui-combotree" data-options="prompt:'所属机构',url:'tree_data1.json',method:'get'" style="width:200px;">
+                    <input class="easyui-combotree" data-options="prompt:'所属机构',url:'home/testdata.json',method:'get'" style="width:200px;">
                 </div>
             </div>
             <div class="control-group form-actions">
@@ -103,7 +103,7 @@
 
 <div class="content">
     <table id="tt" class="easyui-datagrid"
-           url="data/datagrid_data.json"
+           url="datagrid_data.json"
            title="" iconCls="icon-save"
            pagination="true" pagination="true"
            toolbar="#tb">
