@@ -58,5 +58,10 @@ if (window.jQuery) {
             $(this).next().slideToggle('slow');
             $(this).toggleClass("selected");
         });
+/*
+        if (easyloader) {
+            easyloader.locale = 'zh_CN'; // 本地化设置
+            easyloader.theme = 'gray'; // 设置主题
+        }*/
     });
 }

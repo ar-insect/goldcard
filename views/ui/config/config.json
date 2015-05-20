@@ -1,6 +1,6 @@
 {
-    "css": ["global/1.0.0/global.css"],
-    "js": ["common/1.0.0/common.js"],
+    "css": ["jquery-ui/1.4.2/themes/gray/easyui.css", "jquery-ui/1.4.2/themes/icon.css", "global/1.0.0/global.css"],
+    "js": ["jquery-ui/1.4.2/jquery.easyui.min.js", "jquery-ui/1.4.2/locale/easyui-lang-zh_CN.js", "common/1.0.0/common.js"],
     "head": "theme/default",
     "foot": "theme/default",
     "vars": {
