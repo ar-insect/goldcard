@@ -231,36 +231,6 @@ a:hover {
     background: #eee;
 }
 
-/* Icons
----------------------------------------------------------------------*/
-
-.icon {
-    display: block;
-    text-indent: -99999px;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    width: 16px;
-    height: 16px;
-    float: left;
-    margin-right: 4px;
-}
-
-.icon-search {
-    background: url("../images/search.png") no-repeat;
-}
-
-.icon-add {
-    background: url("../images/add.png") no-repeat;
-}
-
-.icon-ok {
-    background: url("../images/accept.png") no-repeat;
-}
-
-.icon-cancel {
-    background: url("../images/cancel.png") no-repeat;
-}
-
 /* Tables
 ---------------------------------------------------------------------*/
 
