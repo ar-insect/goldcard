@@ -23,7 +23,7 @@
                 charset : 'utf-8'
             });
         </script>
-        <script src="/assets/jquery-1.11.1.js"></script>
+        <script src="/assets/jquery-1.11.1.min.js"></script>
     </head>
     <body>
 

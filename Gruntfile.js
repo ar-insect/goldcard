@@ -31,7 +31,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: 'lib/',
-                    src: ['jquery-1.11.1.js'],
+                    src: ['jquery-1.11.1.min.js'],
                     dest: 'assets'
                 }]
             },
