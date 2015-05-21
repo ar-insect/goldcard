@@ -28,28 +28,11 @@ a:hover {
     text-decoration: none;
 }
 
-/*
-
-.clear {
-    clear: both;
-    height: 0px;
-}
-
-small, sup, sub {
-    font-size: 90%;
-}
-
-big, .big {
-    font-size: 120% !important;
-    line-height: 120%;
-}
-
-*/
 hr {
     margin-top: 20px;
     margin-bottom: 20px;
     border: 0;
-    border-top: 1px solid #eeeeee;
+    border-top: 1px solid #eee;
 }
 
 .container {

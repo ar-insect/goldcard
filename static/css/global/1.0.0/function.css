@@ -2,21 +2,35 @@
 function css
 */
 
-.toolbar {
-    height: 30px;
-    line-height: 30px;
-    font-weight: normal;
+/* 清理浮动 */
+.fn-clear:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
 }
 
-.toolbar li {
-    display: inline-block;
+.fn-clear {
+    zoom: 1; /* for IE6 IE7 */
+}
+/* 隐藏,
+通常用来与 JS 配合 */
+body .fn-hide {
+    display: none;
 }
 
+/* 设置内联,
+减少浮动带来的bug */
+.fn-left,
+.fn-right {
+    display: inline;
+}
 
 .fn-left {
     float: left;
 }
-
 .fn-right {
     float: right;
 }
