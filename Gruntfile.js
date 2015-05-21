@@ -90,7 +90,9 @@ module.exports = function (grunt) {
                     'assets/common/1.0.0/common.js': [
                         'static/js/common/1.0.0/jquery.dimensions.js',
                         'static/js/common/1.0.0/jquery.accordion.js',
-                        'static/js/common/1.0.0/magictabs.js',
+                        'static/js/common/1.0.0/Fader.js',
+                        'static/js/common/1.0.0/TabPanel.js',
+                        'static/js/common/1.0.0/Math.uuid.js',
                         'static/js/common/1.0.0/common.js'
                     ]
                 }

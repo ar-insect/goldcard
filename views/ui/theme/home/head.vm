@@ -1,25 +1,25 @@
-#*
- * @description: HOME自定义头部
- *#
-<!doctype html>
-<!--[if IE 9]><html class="lt-ie10" lang="zh"><![endif]-->
-<html class="no-js" lang="zh">
-    <head>
-        <meta charset="$ui.charset" />
-        <!-- If you delete this meta tag World War Z will become a reality -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <title>$!ui.title</title>
     	## 配置css
-        #SLITERAL($ui.css)
-        #SLITERAL($ui.__style)
-        <script src="/assets/$.js" charset="utf-8"></script>
+        #SLITERAL($!ui.css)
+        #SLITERAL($!ui.__style)
+        ## seajs配置本地化
+        <script charset="utf-8" src="/assets/sea.js"></script>
+        <script charset="utf-8" src="/assets/seajs-style/1.0.2/seajs-style.js"></script>
+        <script>
+            seajs && seajs.config({
+                base : '/assets',
+                /*paths: {
+                 assets: '/assets'
+                 },*/
+                alias : {
+                    '$' : 'jquery-1.11.1'
+                },
+                charset : 'utf-8'
+            });
+        </script>
+        <script src="/assets/jquery-1.11.1.min.js"></script>
     </head>
     <body>
-<!-- Header and Nav -->
-      <div class="row">
-        <div class="large-3 columns">
-          <h1>spider</h1>
-        </div>
-        #cmsparse("component/nav.vm")
-      </div>
-<!-- End Header and Nav -->

@@ -21,8 +21,10 @@
             }
         },
         "tab": {
+            "head": "theme/home",
+            "foot": "theme/home",
             "vars": {
-                "layout": "null"
+
             }
         }
     }

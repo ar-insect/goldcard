@@ -26,71 +26,23 @@
         <script src="/assets/jquery-1.11.1.min.js"></script>
     </head>
     <body>
- #*
-    <div id="header">
-
-        <div id="header_content">
-            <div class="header_logotitle"><img src="images/header_logo.png" width="180" height="40"/><img
-                    src="images/header_title.png" width="200" height="40"/></div>
-            <div class="topnav">欢迎管理员登录<br/>
-                时间插件
-            </div>
-            <div id="menu">
-                <ul class="sf-menu">
-                    <li><a href="#"><img src="images/icon_09.png"/>首页</a></li>
-                    <li class="current"><a HREF="#"><img src="images/menu_icon_01_current.png"/>系统资料</a></li>
-                    <li><a HREF="#"><img src="images/menu_icon_02.png"/>档案资料</a></li>
-                    <li><a HREF="#"><img src="images/menu_icon_03.png"/>信用凭证</a></li>
-                    <li><a HREF="#"><img src="images/menu_icon_04.png"/>数据运营</a></li>
-                    <li><a HREF="#"><img src="images/menu_icon_05.png"/>报表中心</a></li>
-                </ul>
-            </div>
-            <p><a href="#">修改密码</a> <a href="login.html">退出系统</a></p>
-        </div>
-
-    </div>
-*#
     <script>
-$(function() {
-        var tabs = $('.ui-tabs');
+                $(document).ready(function(){
+                    tabpanel = new TabPanel({
+                        renderTo:'ui-tabs',
+                        width:'auto',
+                        height:1000,
+                        //border:'none',
+                        active : 0,
+                        //maxLength : 10,
+                        items : [
+                            {id:'toolbarPlugin1',title:'Google',html:'<iframe src="/home/tab" width="100%" height="100%" frameborder="0"></iframe>',closable: true},
+                            {id:'toolbarPlugin12',title:'Google333',html:'<iframe src="/home/tab" width="100%" height="100%" frameborder="0"></iframe>',closable: true}
 
-        tabs.mac('tabs', {
-            tabWidth: 120,//default 90
-            tabHeight: 26,//default 26
-            speed: 8, //default 6
-            hbarHeight: 1, //default 2,
-            items: [{
-                code: 'tab1',
-                title: 'Subject1',
-                closeable: true,
-                url: '/home/tab',
-                //autoLoad: true, // default true
-                height: 'auto',
-                bodyCls: 'tab1'
-            }],
-            onCloseTab: function(me, c, a) {
-                tnCbx.find('[value=' + c + ']').remove();
-                return true;
-            }
-        }).selectFirst();
-
-        var tnCbx = $('#tabNoCbx').change(function() {
-            tabs.select($(this).val());
-        });
-    /*
-        // add tab
-        tabs.addTab({
-            code: 'tab2',
-            title: 'Subject2',
-            closeable: true,
-            el: 'Content of Tab 22'
-        });
-        tabs.select('tab2');
-
-        */
-        });
-
-    </script>
+                        ]
+                    });
+                });
+            </script>
     <div class="container">
         ##侧边栏
         #cmsparse("component/sidebar.vm")
