@@ -55,14 +55,14 @@
                 <label class="control-label">时间区间：</label>
                 <div class="controls"><input type="text" class="easyui-datebox"
                                              data-options="prompt:'起始日期', sharedCalendar:'#J_cc'"/></div>
-                <label class="control-label" style="width:43px;">至：</label>
+                <label class="control-label" style="width:24px;">至</label>
                 <div class="controls"><input type="text" class="easyui-datebox"
                                              data-options="prompt:'结束日期', sharedCalendar:'#J_cc'"/></div>
             </div>
             <div class="control-group">
                 <label class="control-label">用气量区间：</label>
                 <div class="controls"><input class="easyui-textbox" style="width:48px;" data-options="prompt:'起始量'" /></div>
-                <label class="control-label" style="width:43px;">至：</label>
+                <label class="control-label" style="width:24px;">至</label>
                 <div class="controls"><input class="easyui-textbox" style="width:48px;" data-options="prompt:'结束量'" /></div>
             </div>
             <div id="J_cc" class="easyui-calendar"></div>
