@@ -1,6 +1,13 @@
 /*=====================header=============================*/
+
+#menu {
+    overflow: hidden;
+    float: left;
+}
+
 #header {
-    background: url(../../../images/header_bg.png) left top no-repeat #3775b3;
+    /*background: url(../../../images/header_bg.png) left top no-repeat #3775b3;*/
+    background: #3775b3;
     height: 110px;
 }
 
@@ -46,7 +53,7 @@
     position: relative;
     cursor: pointer;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-    background-color: #346ea5 !important;
+    background-color: #346ea5;
 }
 
 #header p a:hover {
@@ -109,7 +116,6 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
 
 /*=====================menu skin=============================*/
 .sf-menu {
-    float: left;
     font: 14px Arial;
 
 }
