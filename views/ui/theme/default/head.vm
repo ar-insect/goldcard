@@ -31,14 +31,13 @@
                     tabpanel = new TabPanel({
                         renderTo:'ui-tabs',
                         width:'auto',
-                        height:1000,
+                        height:'1000px',
                         //border:'none',
                         active : 0,
                         //maxLength : 10,
                         items : [
                             {id:'toolbarPlugin1',title:'Google',html:'<iframe src="/home/tab" width="100%" height="100%" frameborder="0"></iframe>',closable: true},
                             {id:'toolbarPlugin12',title:'Google333',html:'<iframe src="/home/tab" width="100%" height="100%" frameborder="0"></iframe>',closable: true}
-
                         ]
                     });
                 });
