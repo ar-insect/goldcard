@@ -58,17 +58,17 @@ exports.datagrid = function(req, res) {
     console.log('currentpage:', req.body.page);
         res.json([
             {
-                "itemid": "11222",
-                "productid": "dsdsfdfs",
-                "listprice": "23223",
-                "unitcost": "sdfsd",
-                "attr1": "xxvzvxczcx",
-                "status": "ddf",
-                "status121": "fdfsdf",
-                "status12221": "fsdf"
+                "itemid": "1236542",
+                "productid": "张三",
+                "listprice": "放牛",
+                "unitcost": "230.00",
+                "attr1": "去吧。。",
+                "status": "30.00",
+                "status121": "320.00",
+                "status12221": "2015-05-21 10:58"
             },
             {
-                "itemid": "11222",
+                "itemid": "12365422",
                 "productid": "dsdsfdfs",
                 "listprice": "23223",
                 "unitcost": "sdfsd",

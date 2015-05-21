@@ -1,68 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html, body {
-    height: 100%;
-}
-
-body {
-    background: url("../../../images/page_bg.png") 0px 0px #fff !important;
-    font-family: "Î¢ÈíÑÅºÚ", Arial;
-    font-size: 12px;
-    line-height: 1em;
-    color: #000;
-}
-
-input, select, textarea {
-    font-family: "Î¢ÈíÑÅºÚ", Arial, sans-serif;
-    font-size: 1em;
-}
-
-img {
-    border: 0;
-    vertical-align: middle;
-    text-align: left;
-}
-
-.fleft {
-    float: left;
-}
-
-.fright {
-    float: right;
-}
-
-.alignright {
-    text-align: right;
-}
-
-.aligncenter {
-    text-align: center;
-}
-
-.wrapper {
-    width: 100%;
-    overflow: hidden;
-}
-
-.clear {
-    clear: both;
-    height: 0px;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
 /*=====================header=============================*/
 #header {
-    background: url(../../../images/header_bg.png) left top no-repeat #3775b3;
+    background: url(../images/header_bg.png) left top no-repeat #3775b3;
     height: 110px;
 }
 
@@ -202,18 +140,18 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
 }
 
 .sf-menu li, .sf-menu li a {
-    background: url(../../../images/btn_bg_03.png) no-repeat;
+    background: url(../images/btn_bg_03.png) no-repeat;
     margin-right: 2px;
     color: #b8e0fa
 }
 
 .sf-menu li:hover, .sf-menu li.sfHover, .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
-    background: url(../../../images/menu_over_bg.png) no-repeat;
+    background: url("../images/menu_over_bg.png") no-repeat;
     outline: 0;
 }
 
 .sf-menu li.current, .sf-menu li.current a {
-    background: url(../../../images/btn_bg_06.png) no-repeat;
+    background: url(../images/btn_bg_06.png) no-repeat;
     color: #0a55a0;
 }
 

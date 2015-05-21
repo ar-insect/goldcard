@@ -90,7 +90,7 @@
                                 style="width:200px;">
                 </div>
             </div>
-            <div class="control-group form-actions">
+            <div class="control-group fn-ml30">
                 <!--<span class="button button-white button-search">
                     <input class="button-text" type="submit" value="查询"/>
                     <span class="button-icon"></span>
