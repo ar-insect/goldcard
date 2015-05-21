@@ -6,7 +6,7 @@
 body {
     /*font-family: "微软雅黑", Arial;*/
     font-size: 12px;
-    color: #333;
+    color: #000;
     background: #fff;
 }
 
@@ -46,8 +46,6 @@ hr {
     width: 200px;
     overflow: auto;
     padding: 15px 0 0 20px;
-    /*border-right: 1px solid #ccc;
-    background: #e3ebf1;*/
 }
 
 .main_box {
@@ -63,20 +61,8 @@ hr {
 .search {
     width: auto;
     background: #fff;
-    color: #000;
-    font-size: 12px;
 }
 
 .content {
     width: auto;
-    color: #000;
-    font-size: 12px;
-}
-
-.content a {
-    color: #000;
-}
-
-.content img {
-    margin-left: 20px;
 }
