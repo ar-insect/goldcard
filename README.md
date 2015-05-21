@@ -10,4 +10,4 @@
 
 ###框架使用
 
-请点击 [spider wiki](https://github.com/araneid/spider/wiki)
+参见 [spider wiki](https://github.com/araneid/spider/wiki)
