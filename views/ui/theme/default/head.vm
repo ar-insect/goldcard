@@ -37,7 +37,17 @@
                         //maxLength : 10,
                         items : [
                             {id:'toolbarPlugin1',title:'Google',html:'<iframe src="/home/tab" width="100%" height="100%" frameborder="0"></iframe>',closable: true},
-                            {id:'toolbarPlugin12',title:'Google333',html:'<iframe src="/home/tab" width="100%" height="100%" frameborder="0"></iframe>',closable: true}
+                            {id:'toolbarPlugin12',title:'Google333',html:'<iframe src="/home/tab" width="100%" height="100%" frameborder="0"></iframe>',closable: true},
+                            {id:'toolbarPlugin3',title:'Google',html:'<iframe src="/home/tab" width="100%" height="100%" frameborder="0"></iframe>',closable: true},
+                                                        {id:'toolbarPlugin14',title:'Google333',html:'<iframe src="/home/tab" width="100%" height="100%" frameborder="0"></iframe>',closable: true},
+                                                        {id:'toolbarPlugin5',title:'Google',html:'<iframe src="/home/tab" width="100%" height="100%" frameborder="0"></iframe>',closable: true},
+                                                                                    {id:'toolbarPlugin126',title:'Google333',html:'<iframe src="/home/tab" width="100%" height="100%" frameborder="0"></iframe>',closable: true},
+                                                                                    {id:'toolbarPlugin17',title:'Google',html:'<iframe src="/home/tab" width="100%" height="100%" frameborder="0"></iframe>',closable: true},
+                                                                                                                {id:'toolbarPlugin128',title:'Google333',html:'<iframe src="/home/tab" width="100%" height="100%" frameborder="0"></iframe>',closable: true},
+                                                                                                                {id:'toolbarPlugin19',title:'Google',html:'<iframe src="/home/tab" width="100%" height="100%" frameborder="0"></iframe>',closable: true},
+                                                                                                                                            {id:'toolbarPlugin120',title:'Google333',html:'<iframe src="/home/tab" width="100%" height="100%" frameborder="0"></iframe>',closable: true},
+                                                                                                                                            {id:'toolbarPlugin123',title:'Google',html:'<iframe src="/home/tab" width="100%" height="100%" frameborder="0"></iframe>',closable: true},
+                                                                                                                                                                        {id:'toolbarPlugin1244',title:'Google333',html:'<iframe src="/home/tab" width="100%" height="100%" frameborder="0"></iframe>',closable: true}
                         ]
                     });
                 });
