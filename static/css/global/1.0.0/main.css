@@ -32,7 +32,7 @@ hr {
     margin-top: 20px;
     margin-bottom: 20px;
     border: 0;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #eeeeee;
 }
 
 .container {
@@ -43,21 +43,21 @@ hr {
     position: absolute;
     left: 0;
     top: 0;
-    width: 220px;
+    width: 200px;
     overflow: auto;
-    padding: 10px 0 0 10px;
-    border-right: 1px solid #ccc;
-    background: #e3ebf1;
+    padding: 15px 0 0 20px;
+    /*border-right: 1px solid #ccc;
+    background: #e3ebf1;*/
 }
 
 .main_box {
-    margin-left: 220px;
+    margin-left: 200px;
     position: relative;
     overflow: auto;
 }
 
 .m_box {
-    padding: 20px 30px;
+    padding: 20px;
 }
 
 .search {

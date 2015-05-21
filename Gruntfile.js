@@ -45,17 +45,6 @@ module.exports = function (grunt) {
                     src: ['jquery-ui/1.4.2/**/*'],
                     dest: 'assets'
                 }]
-            },
-            /*
-            * 全局js
-            */
-            commonjs: {
-                files: [{
-                    expand: true,
-                    cwd: 'static/js/',
-                    src: ['common/**/*.js'],
-                    dest: 'assets'
-                }]
             }
         },
         transport: {
@@ -92,6 +81,18 @@ module.exports = function (grunt) {
             options: {
                 paths: ['.'],
                 separator: ';'
+            },
+            commonjs: {
+                options: {
+                    noncmd: true
+                },
+                files: {
+                    'assets/common/1.0.0/common.js': [
+                        'static/js/common/1.0.0/jquery.dimensions.js',
+                        'static/js/common/1.0.0/jquery.accordion.js',
+                        'static/js/common/1.0.0/common.js'
+                    ]
+                }
             }
         },
         uglify: {
@@ -145,7 +146,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // other js
-    grunt.registerTask('other-dist-js', ['uglify:compress']);
+    grunt.registerTask('other-dist-js', ['concat:commonjs', 'uglify:compress']);
     // other css
     grunt.registerTask('other-dist-css', ['css_import', 'cssmin:minify']);
     // other

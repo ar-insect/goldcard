@@ -111,7 +111,7 @@
            toolbar="#tb">
         <thead>
             <tr>
-                <th field="itemid" width="200">序号</th>
+                <th field="itemid" width="100">序号</th>
                 <th field="productid" width="220">用户名称</th>
                 <th field="listprice" width="200">业务类型</th>
                 <th field="unitcost" width="200" align="right">金额</th>
