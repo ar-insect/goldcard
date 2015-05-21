@@ -18,7 +18,7 @@
                  assets: '/assets'
                  },*/
                 alias : {
-                    '$' : '$'
+                    '$' : 'jquery-1.11.1'
                 },
                 charset : 'utf-8'
             });
