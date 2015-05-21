@@ -10,6 +10,8 @@ var testdata = require('./controllers/home/data'); //test data
 module.exports = function(app) {
     // home
     app.get('/', site.index);
+    // test tab
+    app.get('/home/tab', site.tab);
     app.get('/home/combotree.json', testdata.combotree);
     app.post('/home/datagrid', testdata.datagrid);
     // 404 page warn: must in the last

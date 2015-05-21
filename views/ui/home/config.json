@@ -19,6 +19,11 @@
             "vars": {
 
             }
+        },
+        "tab": {
+            "vars": {
+                "layout": "null"
+            }
         }
     }
 }

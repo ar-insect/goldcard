@@ -26,8 +26,9 @@
         <script src="/assets/jquery-1.11.1.min.js"></script>
     </head>
     <body>
-
+ #*
     <div id="header">
+
         <div id="header_content">
             <div class="header_logotitle"><img src="images/header_logo.png" width="180" height="40"/><img
                     src="images/header_title.png" width="200" height="40"/></div>
@@ -46,8 +47,50 @@
             </div>
             <p><a href="#">修改密码</a> <a href="login.html">退出系统</a></p>
         </div>
-    </div>
 
+    </div>
+*#
+    <script>
+$(function() {
+        var tabs = $('.ui-tabs');
+
+        tabs.mac('tabs', {
+            tabWidth: 120,//default 90
+            tabHeight: 26,//default 26
+            speed: 8, //default 6
+            hbarHeight: 1, //default 2,
+            items: [{
+                code: 'tab1',
+                title: 'Subject1',
+                closeable: true,
+                url: '/home/tab',
+                //autoLoad: true, // default true
+                height: 'auto',
+                bodyCls: 'tab1'
+            }],
+            onCloseTab: function(me, c, a) {
+                tnCbx.find('[value=' + c + ']').remove();
+                return true;
+            }
+        }).selectFirst();
+
+        var tnCbx = $('#tabNoCbx').change(function() {
+            tabs.select($(this).val());
+        });
+    /*
+        // add tab
+        tabs.addTab({
+            code: 'tab2',
+            title: 'Subject2',
+            closeable: true,
+            el: 'Content of Tab 22'
+        });
+        tabs.select('tab2');
+
+        */
+        });
+
+    </script>
     <div class="container">
         ##侧边栏
         #cmsparse("component/sidebar.vm")

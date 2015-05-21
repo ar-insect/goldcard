@@ -7,3 +7,9 @@ exports.index = function(req, res) {
         hello: '这是mockdata数据。。。'
     });
 };
+
+exports.tab = function(req, res) {
+    res.render('home/tab', {
+        hello: '这是mockdata数据。。。'
+    });
+};

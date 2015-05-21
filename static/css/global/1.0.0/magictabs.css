@@ -1,0 +1,212 @@
+.icon {
+    overflow: hidden;
+    float: left;
+    width: 16px;
+    height: 16px;
+    background-image: url(../../../images/icons.png);
+}
+
+.icon-none {
+    background: none;
+}
+
+.icon-triangle-1-e {
+    background-position: -32px -16px;
+}
+
+.icon-triangle-1-n {
+    background-position: 0 -16px;
+}
+
+.icon-triangle-1-s {
+    background-position: -64px -16px;
+}
+
+.icon-minus {
+    background-position: -48px -128px;
+}
+
+.icon-plus {
+    background-position: -16px -128px;
+}
+
+/* other icons, not required */
+.icon-pencil {
+    background-position: -64px -112px;
+}
+
+.icon-disk {
+    background-position: -96px -112px;
+}
+
+.icon-newwin {
+    background-position: -48px -80px;
+}
+
+.icon-close {
+    background-position: -80px -128px;
+}
+
+.icon-arrowthick-1-e {
+    background-position: -32px -48px;
+}
+
+.icon-arrowthick-1-w {
+    background-position: -96px -48px;
+}
+
+.ui-tabs > .head {
+    height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.ui-tabs > .hbar {
+    width: 100%;
+    height: 2px;
+    position: relative;
+    background-color: #DDD;
+    z-index: 2;
+    top: 24px;
+}
+
+.ui-tabs > .head > .sbtn {
+    width: 24px;
+    height: 24px;
+    float: left;
+    background: url(../../../images/tm-ts.png) repeat-x left bottom;
+}
+
+.ui-tabs > .head > .sbtn span {
+    overflow: hidden;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin: 4px;
+    background-image: url(../../../images/icons.png);
+}
+
+.ui-tabs > .head > .left span {
+    background-position: -96px -48px;
+}
+
+.ui-tabs > .head > .right span {
+    background-position: -32px -48px;
+}
+
+.ui-tabs > .head > .main {
+    height: 24px;
+    overflow: hidden;
+    float: left;
+}
+
+.ui-tabs > .head > .main > .tt {
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.ui-tabs > .body {
+    border: 1px solid #DDD;
+    border-top: 0px;
+    background-color: #FFF;
+    padding: 20px;
+}
+
+.ui-tabs > .body > .main {
+    padding: 0px;
+    margin: 0px;
+    overflow: auto;
+}
+
+.ui-tabs > .head .item {
+    -moz-user-select: none;
+    cursor: pointer;
+    height: 26px;
+    position: relative;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.ui-tabs > .head .item > .main {
+    float: left;
+    color: #FFF;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    padding-left: 2px;
+    font-weight: bold;
+    min-width: 100px;
+}
+
+.ui-tabs > .head .item.closeable > .main {
+    min-width: 88px;
+}
+
+.ui-tabs > .head .item > .xbtn {
+    float: left;
+    height: 26px;
+    width: 8px;
+    overflow: hidden;
+}
+
+.ui-tabs > .head .item > .xbtn > .icon {
+    margin-left: -4px;
+}
+
+.ui-tabs > .head .item > .xbtn > .icon:hover {
+    background-position: -96px -128px;
+}
+
+.ui-tabs > .head .item > .left {
+    float: left;
+    width: 6px;
+    height: 26px;
+}
+
+.ui-tabs > .head .item > .right {
+    float: left;
+    width: 6px;
+    height: 26px;
+}
+
+.ui-tabs > .head .normal {
+    z-index: 1;
+}
+
+.ui-tabs > .head .normal > .main {
+    background: url(../../../images/tm-bg.png) repeat-x;
+    color: #FFF;
+}
+
+.ui-tabs > .head .normal > .left {
+    background: url(../../../images/tm-l.png) no-repeat;
+}
+
+.ui-tabs > .head .normal > .right {
+    background: url(../../../images/tm-r.png) no-repeat;
+}
+
+.ui-tabs > .head .normal > .xbtn {
+    background: url(../../../images/tm-bg.png) repeat-x;
+}
+
+.ui-tabs > .head .selected {
+    z-index: 3;
+}
+
+.ui-tabs > .head .selected > .left {
+    background: url(../../../images/tm-l-s.png) no-repeat;
+}
+
+.ui-tabs > .head .selected > .main {
+    background: url(../../../images/tm-bg-s.png) repeat-x;
+    color: #CC6601;
+}
+
+.ui-tabs > .head .selected > .right {
+    background: url(../../../images/tm-r-s.png) no-repeat;
+}
+
+.ui-tabs > .head .selected > .xbtn {
+    background: url(../../../images/tm-bg-s.png) repeat-x;
+}

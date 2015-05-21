@@ -72,7 +72,7 @@ module.exports = function (grunt) {
             minify: {
                 expand: true,
                 cwd: 'assets/',
-                src: ['global/**/global.css'],
+                src: ['global/**/*.css'],
                 dest: 'assets/',
                 ext: '.css'
             }
@@ -90,6 +90,7 @@ module.exports = function (grunt) {
                     'assets/common/1.0.0/common.js': [
                         'static/js/common/1.0.0/jquery.dimensions.js',
                         'static/js/common/1.0.0/jquery.accordion.js',
+                        'static/js/common/1.0.0/magictabs.js',
                         'static/js/common/1.0.0/common.js'
                     ]
                 }
