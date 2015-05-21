@@ -1,33 +1,27 @@
 /*=====================header=============================*/
 #header {
-    background: url(../images/header_bg.png) left top no-repeat #3775b3;
+    background: url(../../../images/header_bg.png) left top no-repeat #3775b3;
     height: 110px;
 }
 
 #header_content {
     width: 90%;
     margin: 0px auto;
-    height: 110px;
-    margin-left: 70px;
 }
 
 .header_logotitle {
-    margin-top: 20px;
+    margin: 20px 0 9px;
     width: 400px;
     height: 40px;
     float: left;
-    margin-bottom: 9px;
 }
 
 .topnav {
     color: #b7dffa;
     padding: 20px 0 0 0;
-    right: 0;
-    top: 0;
     white-space: nowrap;
-    font-size: 12px;
     text-align: right;
-    line-height: 18px;
+    height: 49px;
 }
 
 #header p {
@@ -62,18 +56,8 @@
 
 /*=====================menu=============================*/
 .sf-menu img {
+    vertical-align: middle;
     margin-right: 6px;
-}
-
-.sf-menu, .sf-menu * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-}
-
-.sf-menu {
-    line-height: 1.0;
 }
 
 .sf-menu ul {
@@ -140,18 +124,18 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
 }
 
 .sf-menu li, .sf-menu li a {
-    background: url(../images/btn_bg_03.png) no-repeat;
+    background: url(../../../images/btn_bg_03.png) no-repeat;
     margin-right: 2px;
     color: #b8e0fa
 }
 
 .sf-menu li:hover, .sf-menu li.sfHover, .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
-    background: url("../images/menu_over_bg.png") no-repeat;
+    background: url(../../../images/menu_over_bg.png) no-repeat;
     outline: 0;
 }
 
 .sf-menu li.current, .sf-menu li.current a {
-    background: url(../images/btn_bg_06.png) no-repeat;
+    background: url(../../../images/btn_bg_06.png) no-repeat;
     color: #0a55a0;
 }
 

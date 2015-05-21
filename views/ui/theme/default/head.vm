@@ -34,7 +34,7 @@
             <div class="topnav">欢迎管理员登录<br/>
                 时间插件
             </div>
-            <nav id="menu">
+            <div id="menu">
                 <ul class="sf-menu">
                     <li><a href="#"><img src="images/icon_09.png"/>首页</a></li>
                     <li class="current"><a HREF="#"><img src="images/menu_icon_01_current.png"/>系统资料</a></li>
@@ -43,7 +43,7 @@
                     <li><a HREF="#"><img src="images/menu_icon_04.png"/>数据运营</a></li>
                     <li><a HREF="#"><img src="images/menu_icon_05.png"/>报表中心</a></li>
                 </ul>
-            </nav>
+            </div>
             <p><a href="#">修改密码</a> <a href="login.html">退出系统</a></p>
         </div>
     </div>

@@ -3,39 +3,21 @@
     padding: 0;
 }
 
-html, body {
-    height: 100%;
-}
-
 body {
-    background: url("../images/page_bg.png") 0px 0px #fff !important;
-    font-family: "微软雅黑", Arial;
+    /*font-family: "微软雅黑", Arial;*/
     font-size: 12px;
-    line-height: 1em;
-    color: #000;
+    color: #333;
+    background: #fff;
 }
 
 ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
-    float: auto;
-    width: 100%;
 }
 
 ul li {
-    margin: auto;
-}
-
-img {
-    border: 0;
-    vertical-align: middle;
-    text-align: left;
-}
-
-.clear {
-    clear: both;
-    height: 0px;
+    margin: 0;
 }
 
 a {
@@ -45,13 +27,12 @@ a {
 a:hover {
     text-decoration: none;
 }
-/* * Addresses Firefox 4+ setting `line-height` on `input` using ` !important` in
-* the UA stylesheet. */
 
-img {
-    border: 0;
-    vertical-align: middle;
-    text-align: left;
+/*
+
+.clear {
+    clear: both;
+    height: 0px;
 }
 
 small, sup, sub {
@@ -63,57 +44,7 @@ big, .big {
     line-height: 120%;
 }
 
-p {
-    word-spacing: 0.125em;
-    hyphenate: auto;
-    hyphenate-lines: 3;
-    margin-top: 1em;
-    line-height: 1.5em;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-    margin: 0;
-    font-weight: 900;
-    line-height: 1.5;
-    color: inherit;
-    font-family: "΢���ź�", Arial;
-}
-h1,
-.h1 {
-    font-size: 24px;
-}
-h2,
-.h2 {
-    font-size: 18px;
-}
-h3,
-.h3 {
-    font-size: 16px;
-}
-h4,
-.h4 {
-    font-size: 14px;
-}
-h5,
-.h5 {
-    font-size: 12px;
-}
-h6,
-.h6 {
-    font-size: 12px;
-}
-
+*/
 hr {
     margin-top: 20px;
     margin-bottom: 20px;
