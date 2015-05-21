@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>sample</title>
+<style type="text/css"  >
+html, body { 
+	width : 100%;
+	height : 100%;
+	padding : 0; 
+	margin : 10px; 
+	overflow : hidden;
+	font-family:"Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif; /* MAIN BODY FONTS */
+}
+.jcTab { width:100%; height:100%;}
+</style>
+<!-- link href="css/core.css" rel="stylesheet" type="text/css"/ -->
+<link href="css/TabPanel.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="src/jquery.js"></script>
+<script type="text/javascript" src="src/Plugins/Fader.js"></script>
+<script type="text/javascript" src="src/Plugins/TabPanel.js"></script>
+<script type="text/javascript" src="src/Plugins/Math.uuid.js"></script>
+<script type="text/javascript" >
+var tabpanel;  
+var jcTabs = [
+'<iframe src="http://www.baidu.com" width="100%" height="100%" frameborder="0"></iframe>',
+'This tab is not closable',
+'<iframe src="http://www.baidu.com" width="100%" height="100%" frameborder="0"></iframe>',
+'You cant see it',
+'This tab is not closable',
+'You can close me by click fork button',
+'You cant see it'
+];
+
+$(document).ready(function(){  
+    tabpanel = new TabPanel({  
+        renderTo:'tab',  
+        width:600,  
+        height:500,  
+        //border:'none',  
+        active : 0,
+        //maxLength : 10,  
+        items : [
+            {id:'toolbarPlugin1',title:'Google',html:jcTabs[0],closable: true},  
+            {id:'toolbarPlugin2',title:'Tab2',html:jcTabs[1],closable: false},  
+            {id:'toolbarPlugin3',title:'Closable',html:jcTabs[2],closable: true},  
+            {id:'toolbarPlugin4',title:'Disabled',html:jcTabs[3],closable: true, disabled:false},
+			{id:'toolbarPlugin5',title:'Disabled',html:jcTabs[4],closable: true, disabled:false},
+			{id:'toolbarPlugin6',title:'Disabled',html:jcTabs[5],closable: true, disabled:false},
+			{id:'toolbarPlugin7',title:'Disabled',html:jcTabs[6],closable: true, disabled:false}
+        ]
+    });  
+}); 
+</script>
+</head>
+<body>
+
+ <div id="tab"></div>
+ <div >
+ 
+ </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>apTabs</title>
+<script type="text/javascript" src="lib/prototype.js"></script>
+<script type="text/javascript" src="src/aptabs.js"></script>
+<link rel="stylesheet" type="text/css" href="css/aptabs.css" />
+</head>
+<body>
+<div id="apTabs" class="apTabs" style="width:500px; height:200px">
+	<h2>Tab 1</h2>
+	<div>Tab content 1. Select 2nd tab by <a href="#" onclick="apTabs.show('apTabs', 2);return false">clicking here.</a><br /><br /> This script featured on <a href="http://www.javascriptkit.com">JavaScript Kit</a>.</div>
+	<h2>Tab 2</h2>
+	<div>Tab content 2. Select 3rd tab by <a href="#" onclick="apTabs.show('apTabs', 3);return false">clicking here.</a></div>
+	<h2 class="noclose">Tab 3</h2>
+	<div>Tab content 3. Notice how this tab cannot be user closed. Select 4th tab by <a href="#" onclick="apTabs.show('apTabs', 4);return false">clicking here.</a></div>
+	<h2>Tab 4</h2>
+	<div>Tab content 4. Select 5th tab by <a href="#" onclick="apTabs.show('apTabs', 5);return false">clicking here.</a></div>
+	<h2>Tab 5</h2>
+	<div>apTabs has been successfully tested in IE6-7, Opera9, Chrome 0.3, Safari 3.1 Win, and Firefox 2-3.</div>
+</div>
+<p><a href="javascript:void(0)" onclick="apTabs.add('apTabs', {title: 'Ajax', ajax: 'ajax.php'})">Create a new tab "Ajax" with Ajax content</a></p>
+<p><a href="javascript:void(0)" onclick="apTabs.add('apTabs', {title: 'iFrame', iframe: 'iframe.html'})">Create a new tab "iFrame" with iFrame content</a></p>
+
+<p>This script available at <a href="http://www.javascriptkit.com">JavaScript Kit</a></p>
+</body>
+</html>
