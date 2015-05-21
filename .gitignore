@@ -15,7 +15,7 @@ Thumbs.db
 .svn/
 
 # customize
-assets/
+# assets/
 
 # node.js
 npm-debug.log
