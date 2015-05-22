@@ -1,22 +1,22 @@
-<div class="side_box">
+<div class="side_box" id="J_sidebox">
     <div class="drawers-wrapper">
     	<div class="boxcap captop"></div>
 		<ul class="drawers">
 			<li class="drawer">
 				<h2 class="drawer-handle open">用气报表</h2>
 				<ul>
-					<li><a href="#" title="">日用气量</a></li>
-					<li><a href="#" title="">月用气量</a></li>
-					<li class="current"><a href="#" title="">年用气量</a></li>
+					<li><a href="#" data-key="RIYONG" data-url="/home/tab">日用气量</a></li>
+					<li><a href="#" data-key="YUEYONG" data-url="/home/tab">月用气量</a></li>
+					<li><a href="#" data-key="NIANYONG" data-url="/home/tab">年用气量</a></li>
 				</ul>
 			</li>
 			<li class="drawer">
 				<h2 class="drawer-handle">收费报表</h2>
 				<ul>
-					<li><a href="#" title="">月收费</a></li>
-					<li><a href="#" title="">年收费</a></li>
-					<li><a href="#" title="">收费明细</a></li>
-					<li><a href="#" title="">账户明细报表</a></li>
+					<li><a href="#">月收费</a></li>
+					<li><a href="#">年收费</a></li>
+					<li><a href="#">收费明细</a></li>
+					<li><a href="#">账户明细报表</a></li>
 				</ul>
 			</li>
 			<li class="drawer">

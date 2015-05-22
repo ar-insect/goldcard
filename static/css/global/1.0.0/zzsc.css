@@ -76,7 +76,8 @@ UL.drawers {
 .drawer-handle.open {
     background-color: #72839D;
     background-position: -188px 0pt;
-    color: #FFFFFF;
+    /*color: #FFFFFF;*/
+    font-weight: 700;
 }
 
 .drawer UL {

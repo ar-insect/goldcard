@@ -45,11 +45,11 @@ hr {
     top: 0;
     width: 200px;
     overflow: auto;
-    padding: 15px 0 0 20px;
+    padding: 20px 0 0 20px;
 }
 
 .main_box {
-    margin-left: 210px;
+    margin-left: 220px;
     position: relative;
     overflow: auto;
 }
