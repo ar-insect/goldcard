@@ -3,7 +3,6 @@
         "css": [],
         "js": [],
         "vars": {
-            "title": "用气量报表"
         }
     },
     "page": {
@@ -17,14 +16,6 @@
             "css": [],
             "js": [],
             "vars": {
-
-            }
-        },
-        "tab": {
-            "head": "theme/home",
-            "foot": "theme/home",
-            "vars": {
-
             }
         }
     }

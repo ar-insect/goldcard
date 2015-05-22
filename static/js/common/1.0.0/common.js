@@ -17,12 +17,11 @@ if (window.jQuery) {
 		tabpanel = new TabPanel({
 			renderTo:'ui-tabs',
 			width:'auto',
-			height:'1000px',
+			//height:'1000px',
 			border:'none',
 			active : 0,
 			//maxLength : 10,
-			items : [
-			]
+			items : []
 		});
 
 		var getPanel = function(key) {
