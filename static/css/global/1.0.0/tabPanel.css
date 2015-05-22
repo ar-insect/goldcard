@@ -158,7 +158,7 @@
 
 .tabpanel_content {
   background-color: #FFF;
-  overflow: auto;
+  /*overflow: auto;*/
   position: relative;
 }
 

@@ -17,7 +17,7 @@ if (window.jQuery) {
 		tabpanel = new TabPanel({
 			renderTo:'ui-tabs',
 			width:'auto',
-			height:'1000px',
+			//height:'1000px',
 			border:'none',
 			active : 0,
 			//maxLength : 10,
@@ -69,6 +69,7 @@ if (window.jQuery) {
 					key: key,
 					id: panelid,
 					title: title,
+					//height:'1000px',
 					html: '<iframe src="' + url + '" id="' + panelid + 'Frame" width="100%" height="100%" frameborder="0"></iframe>',
 					closable: true
 				};
