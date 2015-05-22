@@ -5,9 +5,9 @@
 			<li class="drawer">
 				<h2 class="drawer-handle open">用气报表</h2>
 				<ul>
-					<li><a href="#" data-key="RIYONG" data-url="/home/tab">日用气量</a></li>
-					<li><a href="#" data-key="YUEYONG" data-url="/home/tab">月用气量</a></li>
-					<li><a href="#" data-key="NIANYONG" data-url="/home/tab">年用气量</a></li>
+					<li><a href="#" data-key="RIYONG" data-url="/report/day">日用气量</a></li>
+					<li><a href="#" data-key="YUEYONG" data-url="/report/day">月用气量</a></li>
+					<li><a href="#" data-key="NIANYONG" data-url="/report/day">年用气量</a></li>
 				</ul>
 			</li>
 			<li class="drawer">

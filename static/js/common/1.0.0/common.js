@@ -17,7 +17,7 @@ if (window.jQuery) {
 		tabpanel = new TabPanel({
 			renderTo:'ui-tabs',
 			width:'auto',
-			//height:'1000px',
+			height:'1000px',
 			border:'none',
 			active : 0,
 			//maxLength : 10,
@@ -58,7 +58,6 @@ if (window.jQuery) {
 			var url = $(this).attr('data-url');
 			var key = $(this).attr('data-key');
 			if(!url || !key) return;
-			enableClose();
 			if (panel = getPanel(key)) {
 				// 如果已经打开过此面板则直接激活
 				tabpanel.show(tabpanel.getTabPosision(panel.id), false);
@@ -76,6 +75,7 @@ if (window.jQuery) {
 				tabpanel.addTab(config);
 				setPanel(key, tabpanel.getActiveTab());
 			}
+			if (tabpanel.tabs.length > 1) enableClose();
 		});
 
     });
