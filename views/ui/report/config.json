@@ -1,11 +1,11 @@
 {
     "default": {
         "css": [
+            "global/2.0.0/global.css",
             "jquery-ui/1.4.2/themes/gray/easyui.css",
             "jquery-ui/1.4.2/themes/icon.css"
         ],
         "js": [
-            "jquery-ui/1.4.2/easyloader.js",
             "jquery-ui/1.4.2/jquery.easyui.min.js",
             "jquery-ui/1.4.2/locale/easyui-lang-zh_CN.js"
         ],
@@ -17,8 +17,6 @@
     },
     "page": {
         "day": {
-            "css": [],
-            "js": [],
             "vars": {
             }
         }

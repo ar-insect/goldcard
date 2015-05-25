@@ -2,16 +2,25 @@
 @description: 默认头部
 *#
 <!DOCTYPE html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="images/favicon.ico">
         <title>$!ui.title</title>
-    	## 配置css
+        ## 配置css
         #SLITERAL($!ui.css)
         #SLITERAL($!ui.__style)
         ## seajs配置本地化
         <script charset="utf-8" src="/assets/sea.js"></script>
         <script charset="utf-8" src="/assets/seajs-style/1.0.2/seajs-style.js"></script>
+        <script src="/assets/jquery-1.11.1.min.js"></script>
+        <script charset="utf-8" src="/assets/jquery-ui/1.4.2/easyloader.js"></script>
         <script>
+            easyloader.base = '../assets/jquery-ui/1.4.2/'; // 设置 easyui 的基本目录
             seajs && seajs.config({
                 base : '/assets',
                 /*paths: {
@@ -23,14 +32,14 @@
                 charset : 'utf-8'
             });
         </script>
-        <script src="/assets/jquery-1.11.1.min.js"></script>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
     </head>
-    <body>
-    <div class="head">
-
-    </div>
-    <div class="container">
-        ##侧边栏
+<body>
+    #cmsparse("component/nav.vm")
+    <div class="container-fluid ui-container">
+        <div class="row ui-row">
         #cmsparse("component/sidebar.vm")
-        <div class="main_box">
-            <div class="m_box">

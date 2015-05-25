@@ -58,10 +58,61 @@ module.exports = function (grunt) {
                 paths: ['assets']
             }
         },
+        less: {
+            bootstrap_compileCore: {
+                options: {
+                    strictMath: true,
+                    sourceMap: true,
+                    outputSourceFiles: true,
+                    sourceMapURL: 'bootstrap.css.map',
+                    sourceMapFilename: 'assets/bootstrap/3.3.2/bootstrap.css.map'
+                },
+                src: 'lib/bootstrap/3.3.2/less/bootstrap.less',
+                dest: 'assets/bootstrap/3.3.2/bootstrap-debug.css'
+            },
+            bootstrap_compileTheme: {
+                options: {
+                    strictMath: true,
+                    sourceMap: true,
+                    outputSourceFiles: true,
+                    sourceMapURL: 'bootstrap-theme.css.map',
+                    sourceMapFilename: 'assets/bootstrap/3.3.2/bootstrap-theme.css.map'
+                },
+                src: 'lib/bootstrap/3.3.2/less/theme.less',
+                dest: 'assets/bootstrap/3.3.2/bootstrap-theme-debug.css'
+            }
+        },
+        autoprefixer: {
+            options: {
+                browsers: [
+                    "Android 2.3",
+                    "Android >= 4",
+                    "Chrome >= 20",
+                    "Firefox >= 24",
+                    "Explorer >= 8",
+                    "iOS >= 6",
+                    "Opera >= 12",
+                    "Safari >= 6"
+                ]
+            },
+            bootstrap_core: {
+                options: {
+                    map: true
+                },
+                src: 'assets/bootstrap/3.3.2/bootstrap-debug.css'
+            },
+            bootstrap_theme: {
+                options: {
+                    map: true
+                },
+                src: 'assets/bootstrap/3.3.2/bootstrap-theme-debug.css'
+            }
+        },
         css_import: {
             compress: {
                 files: {
                     'assets/global/1.0.0/global.css': ['static/css/global/1.0.0/global.css'],
+                    'assets/global/2.0.0/global.css': ['static/css/global/2.0.0/global.css']
                 }
             }
         },
@@ -72,9 +123,30 @@ module.exports = function (grunt) {
             minify: {
                 expand: true,
                 cwd: 'assets/',
-                src: ['global/**/*.css'],
+                src: ['global/**/global.css'],
                 dest: 'assets/',
                 ext: '.css'
+            },
+            bootstrap_minifyCore: {
+                src: 'assets/bootstrap/3.3.2/bootstrap-debug.css',
+                dest: 'assets/bootstrap/3.3.2/bootstrap.css'
+            },
+            bootstrap_minifyTheme: {
+                src: 'assets/bootstrap/3.3.2/bootstrap-theme-debug.css',
+                dest: 'assets/bootstrap/3.3.2/bootstrap-theme.css'
+            }
+        },
+        csscomb: {
+            options: {
+            },
+            bootstrap: {
+                options: {
+                    config: 'less/.csscomb.json'
+                },
+                expand: true,
+                cwd: 'assets/bootstrap/3.3.2',
+                src: ['*.css', '!*-debug.css'],
+                dest: 'assets/bootstrap/3.3.2/'
             }
         },
         concat: {
@@ -88,12 +160,19 @@ module.exports = function (grunt) {
                 },
                 files: {
                     'assets/common/1.0.0/common.js': [
-                        'static/js/common/1.0.0/jquery.dimensions.js',
-                        'static/js/common/1.0.0/jquery.accordion.js',
-                        'static/js/common/1.0.0/Fader.js',
-                        'static/js/common/1.0.0/TabPanel.js',
-                        'static/js/common/1.0.0/Math.uuid.js',
                         'static/js/common/1.0.0/common.js'
+                    ]
+                }
+            },
+            tabpanel: {
+                options: {
+                    noncmd: true
+                },
+                files: {
+                    'assets/tabpanel/1.0.0/tabpanel.js': [
+                        'static/js/tabpanel/1.0.0/Fader.js',
+                        'static/js/tabpanel/1.0.0/TabPanel.js',
+                        'static/js/tabpanel/1.0.0/Math.uuid.js'
                     ]
                 }
             }
@@ -148,13 +227,17 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
+
     // other js
-    grunt.registerTask('other-dist-js', ['concat:commonjs', 'uglify:compress']);
+    grunt.registerTask('other-dist-js', ['concat:commonjs', 'concat:tabpanel']);
+    // bootstrap css
+    grunt.registerTask('bootstrap-less-compile', ['less:bootstrap_compileCore', 'less:bootstrap_compileTheme']);
+    grunt.registerTask('bootstrap-dist-css', ['bootstrap-less-compile', 'autoprefixer:bootstrap_core', 'autoprefixer:bootstrap_theme', 'csscomb:bootstrap', 'cssmin:bootstrap_minifyCore', 'cssmin:bootstrap_minifyTheme']);
     // other css
     grunt.registerTask('other-dist-css', ['css_import', 'cssmin:minify']);
     // other
     grunt.registerTask('other', ['copy', 'transport']);
     // Full
-    grunt.registerTask('default', ['other', 'other-dist-js', 'other-dist-css']);
+    grunt.registerTask('default', ['other', 'other-dist-js', 'bootstrap-dist-css', 'other-dist-css']);
 
 };

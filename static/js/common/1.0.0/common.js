@@ -1,13 +1,6 @@
 if (window.jQuery) {
     $(document).ready(function () {
 
-        // NAVIGATION MENU
-        $('ul.drawers').accordion({
-            header: 'H2.drawer-handle',
-            selectedClass: 'open',
-            event: 'click'
-        });
-
         var tabpanel, panels = [];
         var config = {};
         var store = {};
@@ -51,7 +44,7 @@ if (window.jQuery) {
             }
         };
 
-        $('#J_sidebox .drawer li a').on('click', function(e) {
+        $('#J_sidebox li a').on('click', function(e) {
             e.preventDefault();
             var panelid, panel;
             var title = $(this).text() || '';

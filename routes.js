@@ -2,7 +2,6 @@
  * Module dependencies.
  */
 var site = require('./controllers/home'); // default index.js
-
 var testdata = require('./controllers/home/data'); //test data
 
 var report = require('./controllers/report');
@@ -12,6 +11,7 @@ var report = require('./controllers/report');
 module.exports = function(app) {
     // home
     app.get('/', site.index);
+    app.get('/newhome/', site.newindex);
 
     app.get('/home/combotree.json', testdata.combotree);
     app.post('/home/datagrid', testdata.datagrid);

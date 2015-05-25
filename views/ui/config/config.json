@@ -1,5 +1,5 @@
 {
-    "css": ["global/1.0.0/global.css"],
+    "css": [],
     "js": [],
     "head": "theme/default",
     "foot": "theme/default",

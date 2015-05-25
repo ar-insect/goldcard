@@ -1,3 +1,4 @@
+#*
 <div class="side_box" id="J_sidebox">
     <div class="drawers-wrapper">
     	<div class="boxcap captop"></div>
@@ -54,4 +55,23 @@
 		</ul>
     	<div class="boxcap"></div>
     </div>
+</div>
+*#
+
+<div class="col-sm-3 col-md-2 sidebar" id="J_sidebox">
+	<ul class="nav nav-sidebar">
+		<li class="active"><a href="#" data-key="RIYONG" data-url="/report/day">日用气量</a></li>
+		<li><a href="#" data-key="YUEYONG" data-url="/report/day">月用气量</a></li>
+		<li><a href="#" data-key="NIANYONG" data-url="/report/day">年用气量</a></li>
+		<li class="active"><a href="#" data-key="RIYONG1" data-url="/report/day">日用气量</a></li>
+        		<li><a href="#" data-key="YUEYONG1" data-url="/report/day">月用气量</a></li>
+        		<li><a href="#" data-key="NIANYONG1" data-url="/report/day">年用气量</a></li>
+        		<li class="active"><a href="#" data-key="RIYONG2" data-url="/report/day">日用气量</a></li>
+                		<li><a href="#" data-key="YUEYONG2" data-url="/report/day">月用气量</a></li>
+                		<li><a href="#" data-key="NIANYONG2" data-url="/report/day">年用气量</a></li>
+                		<li class="active"><a href="#" data-key="RIYONG3" data-url="/report/day">日用气量</a></li>
+                        		<li><a href="#" data-key="YUEYONG3" data-url="/report/day">月用气量</a></li>
+                        		<li><a href="#" data-key="NIANYONG3" data-url="/report/day">年用气量</a></li>
+	</ul>
+
 </div>

@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+.tabpanel {
+    border: solid 1px #ddd;
+}
+
+.tabpanel_tab_content {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.tabpanel_tab_content .tabpanel_move_content {
+    width: 0px;
+    overflow: hidden;
+}
+
+.tabpanel_move_content_scroll {
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+.tabpanel_mover {
+    overflow: hidden;
+    width: 5000px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabpanel_mover li {
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+    padding: 10px 25px;
+    float: left;
+    position: relative;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.tabpanel_mover li .closer {
+    background: transparent url(../../../images/wdScrollTab/TabPanel/tab-close.gif) no-repeat;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    width: 11px;
+    height: 11px;
+    cursor: pointer;
+}
+
+.tabpanel_mover li .title {
+    font-size: 12px;
+    overflow: hidden;
+    float: left;
+}
+
+.tabpanel_mover li div {
+    color: #23508E;
+}
+
+.tabpanel_mover li .icon_title {
+    font-size: 12px;
+    color: #23508E;
+    padding-left: 25px;
+    background-repeat: no-repeat;
+    background-position: 5px 4px;
+    overflow: hidden;
+    float: left;
+    *height: 20px;
+    *line-height: 20px;
+    *margin-top: 2px;
+    *background-position: 5px 1px;
+}
+
+.tabpanel_mover li.active {
+    background: #fff;
+    font-weight: bold;
+    cursor: default;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
+
+.tabpanel_tab_content .tabpanel_left_scroll {
+    background: transparent url(../../../images/wdScrollTab/TabPanel/scroll-left.gif) no-repeat 0px 0;
+    /*border-bottom: solid 1px #8DB2E3;*/
+    position: absolute;
+    width: 18px;
+    height: 24px;
+    left: 0px;
+    top: 1px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.tabpanel_tab_content .tabpanel_right_scroll {
+    background: transparent url(../../../images/wdScrollTab/TabPanel/scroll-right.gif) no-repeat 0 0;
+    border-bottom: solid 1px #8DB2E3;
+    position: absolute;
+    width: 18px;
+    height: 24px;
+    right: 0px;
+    top: 1px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.tabpanel_tab_content .tabpanel_scroll_over {
+    background-position: -18px 0;
+}
+
+.tabpanel_tab_content .tabpanel_left_scroll_disabled {
+    background-position: 0 0;
+    opacity: .5;
+    -moz-opacity: .5;
+    filter: alpha(opacity=50);
+    cursor: default;
+}
+
+.tabpanel_right_scroll_disabled {
+    background-position: -36px 0;
+    opacity: .5;
+    -moz-opacity: .5;
+    filter: alpha(opacity=50);
+    cursor: default;
+}
+
+.display_none {
+    display: none;
+}
+
+.disabled {
+    color: gray;
+}
+
+.tabpanel_tab_content .tabpanel_tab_spacer {
+}
+
+.tabpanel_content {
+    background-color: #FFF;
+    /*overflow: auto;*/
+    position: relative;
+}
+
+.tabpanel_content .html_content {
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+}

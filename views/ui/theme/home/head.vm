@@ -23,4 +23,5 @@
         <script src="/assets/jquery-1.11.1.min.js"></script>
     </head>
     <body>
+    #cmsparse("component/sidebar.vm")
     <div style="padding:30px 20px">

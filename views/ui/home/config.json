@@ -1,7 +1,9 @@
 {
     "default": {
-        "css": [],
+        "css": ["global/1.0.0/global.css"],
         "js": ["common/1.0.0/common.js"],
+        "head": "theme/home",
+        "foot": "theme/home",
         "vars": {
         }
     },

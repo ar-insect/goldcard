@@ -1,10 +1,8 @@
 #*
 @description: 默认页脚
 *#
-            </div>
         </div>
     </div>
-    #cmsparse("component/footCommon.vm")
     ## 配置js
     #SLITERAL($!ui.js)
     #SLITERAL($!ui.__script)

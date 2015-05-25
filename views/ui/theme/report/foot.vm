@@ -2,8 +2,5 @@
     ## 配置js
     #SLITERAL($!ui.js)
     #SLITERAL($!ui.__script)
-    <script>
-
-    </script>
     </body>
 </html>
