@@ -170,6 +170,7 @@ module.exports = function (grunt) {
                 },
                 files: {
                     'assets/common/1.0.0/common.js': [
+                        'static/js/common/1.0.0/showLoading.js',
                         'static/js/common/1.0.0/metisMenu.js',
                         'static/js/common/1.0.0/common.js'
                     ]
