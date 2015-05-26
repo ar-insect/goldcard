@@ -58,20 +58,38 @@
 </div>
 *#
 
-<div class="col-sm-3 col-md-2 sidebar" id="J_sidebox">
-	<ul class="nav nav-sidebar">
-		<li class="active"><a href="#" data-key="RIYONG" data-url="/report/day">日用气量</a></li>
-		<li><a href="#" data-key="YUEYONG" data-url="/report/day">月用气量</a></li>
-		<li><a href="#" data-key="NIANYONG" data-url="/report/day">年用气量</a></li>
-		<li class="active"><a href="#" data-key="RIYONG1" data-url="/report/day">日用气量</a></li>
-        		<li><a href="#" data-key="YUEYONG1" data-url="/report/day">月用气量</a></li>
-        		<li><a href="#" data-key="NIANYONG1" data-url="/report/day">年用气量</a></li>
-        		<li class="active"><a href="#" data-key="RIYONG2" data-url="/report/day">日用气量</a></li>
-                		<li><a href="#" data-key="YUEYONG2" data-url="/report/day">月用气量</a></li>
-                		<li><a href="#" data-key="NIANYONG2" data-url="/report/day">年用气量</a></li>
-                		<li class="active"><a href="#" data-key="RIYONG3" data-url="/report/day">日用气量</a></li>
-                        		<li><a href="#" data-key="YUEYONG3" data-url="/report/day">月用气量</a></li>
-                        		<li><a href="#" data-key="NIANYONG3" data-url="/report/day">年用气量</a></li>
-	</ul>
-
+<div class="col-sm-3 col-md-2 nav-sidebar" >
+	<aside class="sidebar">
+	<nav class="sidebar-nav">
+	    <ul id="J_sidebar">
+            <li class="active">
+            	<a href="#">Menu 0 <span class="glyphicon arrow"></span></a>
+				  <ul>
+					  <li><a href="#">item 0.1</a></li>
+					  <li><a href="#">item 0.2</a></li>
+					  <li><a href="http://onokumus.com">onokumus</a></li>
+					  <li><a href="#">item 0.4</a></li>
+				  </ul>
+			  </li>
+              <li>
+                  <a href="#">Menu 1 <span class="glyphicon arrow"></span></a>
+                  <ul>
+                      <li><a href="#">item 0.1</a></li>
+                      <li><a href="#">item 0.2</a></li>
+                      <li><a href="#">onokumus</a></li>
+                      <li><a href="#">item 0.4</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="#">Menu 2 <span class="glyphicon arrow"></span></a>
+                  <ul>
+                      <li><a href="#">item 2.1</a></li>
+                      <li><a href="#">item 2.2</a></li>
+                      <li><a href="#">item 2.3</a></li>
+                      <li><a href="#">item 2.4</a></li>
+                  </ul>
+              </li>
+          </ul>
+          </nav>
+            </aside>
 </div>

@@ -1,6 +1,6 @@
 {
     "default": {
-        "css": ["bootstrap/3.3.2/bootstrap-debug.css", "bootstrap/3.3.2/bootstrap-theme-debug.css", "global/2.0.0/global.css"],
+        "css": ["bootstrap/3.3.2/css/bootstrap-debug.css", "bootstrap/3.3.2/css/bootstrap-theme-debug.css", "global/2.0.0/global.css"],
         "js": ["tabpanel/1.0.0/tabpanel.js", "common/1.0.0/common.js"],
         "vars": {
         }

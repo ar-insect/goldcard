@@ -512,15 +512,15 @@ TabPanel.prototype = {
                     tabEntity.kill(position);
                 };
             }(this.tabs.length - 1));
-/*
-            if (tabitem.closable) {
-                tab.bind('dblclick', function (position) {
-                    return function () {
-                        tabEntity.kill(position);
-                    };
-                }(this.tabs.length - 1));
-            }
-*/
+            /*
+             if (tabitem.closable) {
+             tab.bind('dblclick', function (position) {
+             return function () {
+             tabEntity.kill(position);
+             };
+             }(this.tabs.length - 1));
+             }
+             */
             if (!tabitem.lazyload) {
                 this.show(this.tabs.length - 1, tabitem.notExecuteMoveSee);
             }
@@ -658,15 +658,15 @@ TabPanel.prototype = {
                 };
             }(i));
             /*
-            if (this.tabs[i].closable) {
-                this.tabs[i].tab.unbind('dblclick');
-                this.tabs[i].tab.bind('dblclick', function (i) {
-                    return function () {
-                        tabEntity.kill(i);
-                    };
-                }(i));
-            }
-            */
+             if (this.tabs[i].closable) {
+             this.tabs[i].tab.unbind('dblclick');
+             this.tabs[i].tab.bind('dblclick', function (i) {
+             return function () {
+             tabEntity.kill(i);
+             };
+             }(i));
+             }
+             */
         }
         //update width
         this.update();

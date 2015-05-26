@@ -35,6 +35,15 @@ module.exports = function (grunt) {
                     dest: 'assets'
                 }]
             },
+            // bootstrap fonts
+            bsfonts: {
+                files: [{
+                    expand: true,
+                    cwd: 'lib/',
+                    src: ['bootstrap/3.3.2/fonts/*'],
+                    dest: 'assets'
+                }]
+            },
             /*
              * jquery ui 直接cp到assets
              */
@@ -65,10 +74,10 @@ module.exports = function (grunt) {
                     sourceMap: true,
                     outputSourceFiles: true,
                     sourceMapURL: 'bootstrap.css.map',
-                    sourceMapFilename: 'assets/bootstrap/3.3.2/bootstrap.css.map'
+                    sourceMapFilename: 'assets/bootstrap/3.3.2/css/bootstrap.css.map'
                 },
                 src: 'lib/bootstrap/3.3.2/less/bootstrap.less',
-                dest: 'assets/bootstrap/3.3.2/bootstrap-debug.css'
+                dest: 'assets/bootstrap/3.3.2/css/bootstrap-debug.css'
             },
             bootstrap_compileTheme: {
                 options: {
@@ -76,10 +85,10 @@ module.exports = function (grunt) {
                     sourceMap: true,
                     outputSourceFiles: true,
                     sourceMapURL: 'bootstrap-theme.css.map',
-                    sourceMapFilename: 'assets/bootstrap/3.3.2/bootstrap-theme.css.map'
+                    sourceMapFilename: 'assets/bootstrap/3.3.2/css/bootstrap-theme.css.map'
                 },
                 src: 'lib/bootstrap/3.3.2/less/theme.less',
-                dest: 'assets/bootstrap/3.3.2/bootstrap-theme-debug.css'
+                dest: 'assets/bootstrap/3.3.2/css/bootstrap-theme-debug.css'
             }
         },
         autoprefixer: {
@@ -99,13 +108,13 @@ module.exports = function (grunt) {
                 options: {
                     map: true
                 },
-                src: 'assets/bootstrap/3.3.2/bootstrap-debug.css'
+                src: 'assets/bootstrap/3.3.2/css/bootstrap-debug.css'
             },
             bootstrap_theme: {
                 options: {
                     map: true
                 },
-                src: 'assets/bootstrap/3.3.2/bootstrap-theme-debug.css'
+                src: 'assets/bootstrap/3.3.2/css/bootstrap-theme-debug.css'
             }
         },
         css_import: {
@@ -129,12 +138,12 @@ module.exports = function (grunt) {
                 ext: '.css'
             },
             bootstrap_minifyCore: {
-                src: 'assets/bootstrap/3.3.2/bootstrap-debug.css',
-                dest: 'assets/bootstrap/3.3.2/bootstrap.css'
+                src: 'assets/bootstrap/3.3.2/css/bootstrap-debug.css',
+                dest: 'assets/bootstrap/3.3.2/css/bootstrap.css'
             },
             bootstrap_minifyTheme: {
-                src: 'assets/bootstrap/3.3.2/bootstrap-theme-debug.css',
-                dest: 'assets/bootstrap/3.3.2/bootstrap-theme.css'
+                src: 'assets/bootstrap/3.3.2/css/bootstrap-theme-debug.css',
+                dest: 'assets/bootstrap/3.3.2/css/bootstrap-theme.css'
             }
         },
         csscomb: {
@@ -145,9 +154,9 @@ module.exports = function (grunt) {
                     config: 'less/.csscomb.json'
                 },
                 expand: true,
-                cwd: 'assets/bootstrap/3.3.2',
+                cwd: 'assets/bootstrap/3.3.2/css',
                 src: ['*.css', '!*-debug.css'],
-                dest: 'assets/bootstrap/3.3.2/'
+                dest: 'assets/bootstrap/3.3.2/css'
             }
         },
         concat: {
@@ -161,6 +170,7 @@ module.exports = function (grunt) {
                 },
                 files: {
                     'assets/common/1.0.0/common.js': [
+                        'static/js/common/1.0.0/metisMenu.js',
                         'static/js/common/1.0.0/common.js'
                     ]
                 }
