@@ -13,4 +13,3 @@ exports.newindex = function(req, res) {
         hello: '这是mockdata数据。。。'
     });
 };
-

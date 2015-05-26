@@ -1,6 +1,12 @@
 
 exports.day = function(req, res) {
     res.render('report/day', {
-        hello: 'ÕâÊÇmockdataÊı¾İ¡£¡£¡£'
+        hello: 'è¿™æ˜¯mockdataæ•°æ®ã€‚ã€‚ã€‚'
+    });
+};
+
+exports.start = function(req, res) {
+    res.render('report/start', {
+        hello: 'è¿™æ˜¯èµ·å§‹é¡µé¢ã€ã€ã€'
     });
 };

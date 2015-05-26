@@ -15,8 +15,12 @@ module.exports = function(app) {
 
     app.get('/home/combotree.json', testdata.combotree);
     app.post('/home/datagrid', testdata.datagrid);
+    // tabs
+    // 首页
+    app.get('/report/start', report.start);
     // day
     app.get('/report/day', report.day);
+
     // 404 page warn: must in the last
     app.get('*', function(req, res) {
         res.render('home/404', {

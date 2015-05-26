@@ -16,7 +16,14 @@ if (window.jQuery) {
             border:'none',
             active : 0,
             //maxLength : 10,
-            items : []
+            items : [{
+                key: '',
+                id: id++,
+                title: '<i class="glyphicon glyphicon-home home"></i>首页',
+                //height:'1000px',
+                html: '<iframe src="/report/start" id="' + (pre + id++) + 'Frame" width="100%" height="100%" frameborder="0"></iframe>',
+                closable: false
+            }]
         });
 
         var getPanel = function(key) {

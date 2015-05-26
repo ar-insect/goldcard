@@ -438,7 +438,7 @@ TabPanel.prototype = {
             tab.appendTo(this.tabpanel_mover);
 
             var title = $('<DIV></DIV>');
-            title.text(tabitem.title);
+            title.html(tabitem.title);
             title.appendTo(tab);
 
             var wFix = tabitem.closable == false ? 0 : 5;

@@ -62,7 +62,7 @@
 	<aside class="sidebar">
 	<nav class="sidebar-nav">
 	    <ul id="J_sidebar">
-            <li>
+            <li class="active">
             	<a href="#">用气报表<span class="glyphicon arrow"></span></a>
 				  <ul>
 					  <li><a href="#" data-key="RIYONG" data-url="/report/day">日用气量</a></li>

@@ -104,3 +104,12 @@ html, body {
     height: 100%;
 }
 
+.home {
+    font-size: 12px;
+    display: block;
+    position: absolute;
+    top: 11px;
+    height: 14px;
+    width: 14px;
+    left: 11px;
+}
