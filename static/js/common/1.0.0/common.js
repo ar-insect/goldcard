@@ -1,6 +1,8 @@
 if (window.jQuery) {
     $(document).ready(function () {
 
+        $("#J_sidebar").metisMenu({doubleTapToGo: true});
+
         var tabpanel, panels = [];
         var config = {};
         var store = {};
