@@ -157,7 +157,7 @@ TabPanel.prototype = {
         this.tabpanel_left_scroll.bind('click', function () {
             tabEntity.moveLeft();
         });
-        this.tabpanel_left_scroll.addClass('tabpanel_left_scroll');
+        this.tabpanel_left_scroll.addClass('tabpanel_left_scroll glyphicon glyphicon-chevron-left');
         this.tabpanel_left_scroll.addClass('display_none');
         this.tabpanel_left_scroll.bind('mouseover', function () {
             var l = $(this);
@@ -174,7 +174,7 @@ TabPanel.prototype = {
         this.tabpanel_right_scroll.bind('click', function () {
             tabEntity.moveRight();
         });
-        this.tabpanel_right_scroll.addClass('tabpanel_right_scroll');
+        this.tabpanel_right_scroll.addClass('tabpanel_right_scroll glyphicon glyphicon-chevron-right');
         this.tabpanel_right_scroll.addClass('display_none');
         this.tabpanel_right_scroll.bind('mouseover', function () {
             var r = $(this);

@@ -86,7 +86,8 @@
 }
 
 .tabpanel_tab_content .tabpanel_left_scroll {
-    background: #ccc;
+    font-size: 20px;
+    line-height: 39px;
     position: absolute;
     width: 18px;
     height: 39px;
@@ -97,7 +98,8 @@
 }
 
 .tabpanel_tab_content .tabpanel_right_scroll {
-    background:  #ccc;
+    font-size: 20px;
+    line-height: 39px;
     position: absolute;
     width: 18px;
     height: 39px;

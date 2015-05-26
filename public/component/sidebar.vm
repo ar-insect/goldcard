@@ -73,18 +73,18 @@
               <li>
                   <a href="#">收费报表<span class="glyphicon arrow"></span></a>
                   <ul>
-                      <li><a href="#">月收费</a></li>
-						<li><a href="#">年收费</a></li>
-						<li><a href="#">收费明细</a></li>
+                      <li><a href="#" data-key="RIYONG22" data-url="/report/day">月收费</a></li>
+						<li><a href="#" data-key="YUEYONG22" data-url="/report/day">年收费</a></li>
+						<li><a href="#" data-key="NIANYONG22" data-url="/report/day">收费明细</a></li>
 						<li><a href="#">账户明细报表</a></li>
                   </ul>
               </li>
               <li>
                   <a href="#">统计图<span class="glyphicon arrow"></span></a>
                   <ul>
-                      <li><a href="#" title="">日用气量</a></li>
-						<li><a href="#" title="">月用气量</a></li>
-						<li><a href="#" title="">年用气量</a></li>
+                      <li><a href="#" data-key="RIYONG33" data-url="/report/day">日用气量</a></li>
+						<li><a href="#" data-key="YUEYONG33" data-url="/report/day">月用气量</a></li>
+						<li><a href="#" data-key="NIANYONG33" data-url="/report/day">年用气量</a></li>
 						<li><a href="#" title="">不同时间用量对比</a></li>
 						<li><a href="#" title="">同一时间段用量趋势图</a></li>
                   </ul>
