@@ -1,22 +1,12 @@
 {
     "default": {
-        "css": ["global/1.0.0/global.css"],
-        "js": ["common/1.0.0/common.js"],
-        "head": "theme/home",
-        "foot": "theme/home",
+        "css": ["bootstrap/3.3.2/css/bootstrap-debug.css", "bootstrap/3.3.2/css/bootstrap-theme-debug.css", "global/2.0.0/global.css"],
+        "js": ["tabpanel/1.0.0/tabpanel.js", "common/1.0.0/common.js"],
         "vars": {
         }
     },
     "page": {
-        "404": {
-            "vars": {
-                "layout": "null",
-                "title": "页面未找到"
-            }
-        },
         "index": {
-            "css": [],
-            "js": [],
             "vars": {
             }
         }
