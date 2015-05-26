@@ -112,7 +112,8 @@ module.exports = function (grunt) {
             compress: {
                 files: {
                     'assets/global/1.0.0/global.css': ['static/css/global/1.0.0/global.css'],
-                    'assets/global/2.0.0/global.css': ['static/css/global/2.0.0/global.css']
+                    'assets/global/2.0.0/global.css': ['static/css/global/2.0.0/global.css'],
+                    'assets/frame/1.0.0/frame.css': ['static/css/frame/1.0.0/frame.css']
                 }
             }
         },
@@ -123,7 +124,7 @@ module.exports = function (grunt) {
             minify: {
                 expand: true,
                 cwd: 'assets/',
-                src: ['global/**/global.css'],
+                src: ['global/**/global.css', 'frame/**/frame.css'],
                 dest: 'assets/',
                 ext: '.css'
             },

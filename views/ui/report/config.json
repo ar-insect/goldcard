@@ -1,7 +1,7 @@
 {
     "default": {
         "css": [
-            "global/2.0.0/global.css",
+            "frame/1.0.0/frame.css",
             "jquery-ui/1.4.2/themes/gray/easyui.css",
             "jquery-ui/1.4.2/themes/icon.css"
         ],

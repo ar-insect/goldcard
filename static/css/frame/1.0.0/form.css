@@ -12,25 +12,10 @@
     behavior: url(ie-css3.htc);
 }
 
-.ui-form input {
-    width: auto;
-}
-
 .ui-form input[type=text],
 .ui-form input[type="password"],
 .ui-form textarea {
     width: 150px;
-}
-
-.ui-form .radio {
-    font-weight: normal;
-}
-
-.ui-form .radio input {
-    width: auto;
-    vertical-align: middle;
-    margin-right: 5px;
-    margin-top: -4px;
 }
 
 .ui-form .row {

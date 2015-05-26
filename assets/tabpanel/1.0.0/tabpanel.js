@@ -459,7 +459,7 @@ TabPanel.prototype = {
                 }
             }
 
-            var closer = $('<DIV></DIV>');
+            var closer = $('<DIV>×</DIV>');
             closer.addClass('closer');
             closer.attr('title', 'Close tab');
             closer.appendTo(tab);
