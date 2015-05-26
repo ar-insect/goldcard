@@ -1,6 +1,6 @@
 ## 说明
 
-新版前端整合`Jquery EasyUI 1.4.2`
+前端整合 `bootstrap3.3.2` + `Jquery EasyUI 1.4.2`
 
 ![snapshot](images/snapshoot.png)
 
