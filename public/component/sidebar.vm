@@ -62,34 +62,48 @@
 	<aside class="sidebar">
 	<nav class="sidebar-nav">
 	    <ul id="J_sidebar">
-            <li class="active">
-            	<a href="#">Menu 0 <span class="glyphicon arrow"></span></a>
+            <li>
+            	<a href="#">用气报表<span class="glyphicon arrow"></span></a>
 				  <ul>
-					  <li><a href="#">item 0.1</a></li>
-					  <li><a href="#">item 0.2</a></li>
-					  <li><a href="http://onokumus.com">onokumus</a></li>
-					  <li><a href="#">item 0.4</a></li>
+					  <li><a href="#" data-key="RIYONG" data-url="/report/day">日用气量</a></li>
+						<li><a href="#" data-key="YUEYONG" data-url="/report/day">月用气量</a></li>
+						<li><a href="#" data-key="NIANYONG" data-url="/report/day">年用气量</a></li>
 				  </ul>
 			  </li>
               <li>
-                  <a href="#">Menu 1 <span class="glyphicon arrow"></span></a>
+                  <a href="#">收费报表<span class="glyphicon arrow"></span></a>
                   <ul>
-                      <li><a href="#">item 0.1</a></li>
-                      <li><a href="#">item 0.2</a></li>
-                      <li><a href="#">onokumus</a></li>
-                      <li><a href="#">item 0.4</a></li>
+                      <li><a href="#">月收费</a></li>
+						<li><a href="#">年收费</a></li>
+						<li><a href="#">收费明细</a></li>
+						<li><a href="#">账户明细报表</a></li>
                   </ul>
               </li>
               <li>
-                  <a href="#">Menu 2 <span class="glyphicon arrow"></span></a>
+                  <a href="#">统计图<span class="glyphicon arrow"></span></a>
                   <ul>
-                      <li><a href="#">item 2.1</a></li>
-                      <li><a href="#">item 2.2</a></li>
-                      <li><a href="#">item 2.3</a></li>
-                      <li><a href="#">item 2.4</a></li>
+                      <li><a href="#" title="">日用气量</a></li>
+						<li><a href="#" title="">月用气量</a></li>
+						<li><a href="#" title="">年用气量</a></li>
+						<li><a href="#" title="">不同时间用量对比</a></li>
+						<li><a href="#" title="">同一时间段用量趋势图</a></li>
                   </ul>
               </li>
+              <li>
+					<a href="#">异常报表<span class="glyphicon arrow"></span></a>
+					<ul>
+						<li><a href="#" title="">不用气</a></li>
+						<li><a href="#" title="">不上传</a></li>
+						<li><a href="#" title="">欠费用户</a></li>
+						<li><a href="#" title="">报表信息</a></li>
+						<li><a href="#" title="">阀门信息</a></li>
+						<li><a href="#" title="">余量不足</a></li>
+						<li><a href="#" title="">电量不足</a></li>
+						<li><a href="#" title="">电磁干扰</a></li>
+						<li><a href="#" title="">到期表具</a></li>
+					</ul>
+				</li>
           </ul>
           </nav>
-            </aside>
+      </aside>
 </div>

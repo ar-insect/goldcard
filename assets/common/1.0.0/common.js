@@ -293,7 +293,7 @@
             }
         };
 
-        $('#J_sidebox li a').on('click', function(e) {
+        $('#J_sidebar ul.collapse li a').on('click', function(e) {
             e.preventDefault();
             var panelid, panel;
             var title = $(this).text() || '';
