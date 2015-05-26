@@ -54,7 +54,7 @@ if (window.jQuery) {
             if (panel = getPanel(key)) {
                 // 如果已经打开过此面板则直接激活
                 tabpanel.show(tabpanel.getTabPosision(panel.id), false);
-                tabpanel.refresh(panel.id);
+                //tabpanel.refresh(panel.id);
             } else {
                 // 否则新开面板
                 panelid = pre + id++;
