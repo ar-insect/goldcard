@@ -1,21 +1,12 @@
 /* form.css
 ---------------------------------------------------------------------*/
 .ui-form {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-left: -50px;
 }
 
 .ui-form input {
-    position: relative;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
     behavior: url(ie-css3.htc);
-}
-
-.ui-form input[type=text],
-.ui-form input[type="password"],
-.ui-form textarea {
-    width: 150px;
 }
 
 .ui-form .row {
@@ -47,5 +38,8 @@
     float: left;
     display: inline;
     height: 48px;
-    line-height: 30px;
+}
+
+.ui-form select {
+    padding: 0 10px;
 }

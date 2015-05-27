@@ -54,8 +54,8 @@
 
 .tabpanel_mover li .closer {
     position: absolute;
-    right: 6px;
-    top: 6px;
+    right: 2px;
+    top: 2px;
     width: 11px;
     height: 11px;
     font-family: tahoma;

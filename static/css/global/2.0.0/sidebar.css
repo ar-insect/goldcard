@@ -34,9 +34,10 @@
 }
 
 .sidebar-nav ul a {
+    border-top: 1px solid #ddd;
     padding: 10px 20px 10px 40px;
     color: #fff;
-    background: #428bca;
+    background: #0C61CC;
 }
 
 .sidebar-nav ul a:hover,

@@ -110,9 +110,9 @@
            toolbar="#tb">
         <thead>
             <tr>
-                <th field="itemid" width="150">序号</th>
-                <th field="productid" width="150">用户名称</th>
-                <th field="listprice" width="100">业务类型</th>
+                <th field="itemid" width="200">序号</th>
+                <th field="productid" width="200">用户名称</th>
+                <th field="listprice" width="200">业务类型</th>
                 <th field="unitcost" width="100" align="right">金额</th>
                 <th field="attr1" width="100">气量</th>
                 <th field="status" width="100">单价</th>

@@ -241,7 +241,7 @@ module.exports = function (grunt) {
 
 
     // other js
-    grunt.registerTask('other-dist-js', ['concat:commonjs', 'concat:tabpanel']);
+    grunt.registerTask('other-dist-js', ['concat:commonjs', 'concat:tabpanel', 'uglify']);
     // bootstrap css
     grunt.registerTask('bootstrap-less-compile', ['less:bootstrap_compileCore', 'less:bootstrap_compileTheme']);
     grunt.registerTask('bootstrap-dist-css', ['bootstrap-less-compile', 'autoprefixer:bootstrap_core', 'autoprefixer:bootstrap_theme', 'csscomb:bootstrap', 'cssmin:bootstrap_minifyCore', 'cssmin:bootstrap_minifyTheme']);
