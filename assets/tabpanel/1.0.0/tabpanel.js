@@ -456,7 +456,7 @@ TabPanel.prototype = {
                 }
             }
 
-            var closer = $('<DIV>x</DIV>');
+            var closer = $('<DIV><i class="glyphicon glyphicon-remove" style="font-size:12px;"></i></DIV>');
             closer.addClass('closer');
             closer.attr('title', 'Close tab');
             closer.appendTo(tab);
