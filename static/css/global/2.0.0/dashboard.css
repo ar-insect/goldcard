@@ -46,7 +46,7 @@ html, body {
         position: fixed;
         padding: 20px 0;
         background: #f5f5f5;
-        border-right: 1px solid #ddd;
+        border-right: 1px solid #eee;
         top: 50px;
         bottom: 0;
         left: 0;
@@ -111,5 +111,5 @@ html, body {
     top: 11px;
     height: 14px;
     width: 14px;
-    left: 8px;
+    left: 11px;
 }

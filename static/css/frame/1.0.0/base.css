@@ -28,8 +28,7 @@ input,select,textarea {
     font-size:100%;
 }
 
-/* 隐藏body滚动条 */
-body { overflow: hidden; }
+body { overflow: auto; }
 
 /* 去掉各Table  cell 的边距并让其边重合 */
 table {

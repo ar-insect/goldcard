@@ -25,33 +25,28 @@
     width: 5000px;
     float: left;
     margin: 0;
-    padding-left: 20px;
+    padding: 0;
     position: relative;
-    border-bottom: 1px solid #bbb;
+    border-bottom: 1px solid #ddd;
 }
 
 .tabpanel_mover li {
-    margin-right: 5px;
     margin-bottom: -1px;
-    padding: 10px 25px;
-    border: 1px solid #ddd;
-    border-bottom: 1px solid #bbb;
-    border-radius: 5px 5px 0px 0px;
+    margin-right: 2px;
+    border-top: 2px solid transparent;
+    border-radius: 3px 3px 0px 0px;
     float: left;
-    position: relative;
+    background: #fff;
     list-style-type: none;
+    position: relative;
     cursor: pointer;
 }
 
-.tabpanel_mover li:hover {
-    background: #ddd;
-}
-
 .tabpanel_mover li.active {
-    background: #fff;
     cursor: default;
-    border: 1px solid #bbb;
-    border-bottom-color: transparent;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-top: 3px solid #0C61CC;
 }
 
 .tabpanel_mover li .closer {
@@ -67,15 +62,11 @@
     cursor: pointer;
 }
 
-.tabpanel_mover li.active .title {
-    color: #333;
-}
-
 .tabpanel_mover li .title {
-    color: #999;
     font-size: 12px;
     overflow: hidden;
     float: left;
+    padding: 10px 25px;
 }
 
 .tabpanel_mover li .icon_title {
